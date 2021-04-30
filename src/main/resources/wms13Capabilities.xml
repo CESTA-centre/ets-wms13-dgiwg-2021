@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" updateSequence="1115505" version="1.3.0" xsi:schemaLocation="http://www.opengis.net/wms https://wxs.ign.fr/geoportail/v/schemas/wms/1.3.0/capabilities_1_3_0.xsd">
+  <Service>
+    <Name>WMS</Name>
+    <Title>WMS Vecteur Geoportail</Title>
+    <Abstract>Ce service permet la visualisation de couches de données vecteur IGN au travers d'un flux WMS</Abstract>
+    <KeywordList>
+      <Keyword>Unités administratives</Keyword>
+      <Keyword>Limites administratives</Keyword>
+      <Keyword>Surfaces bâties</Keyword>
+      <Keyword>Réseaux de transport</Keyword>
+      <Keyword>Routes</Keyword>
+      <Keyword>Réseaux ferroviaires</Keyword>
+      <Keyword>Aérodromes</Keyword>
+      <Keyword>Réseau hydrographique</Keyword>
+      <Keyword>Parcelles cadastrales</Keyword>
+      <Keyword>Bâtiments</Keyword>
+      <Keyword>Services d'utilité publique et services publics</Keyword>
+      <Keyword>Réseaux de transport</Keyword>
+      <Keyword>Hydrographie</Keyword>
+    </KeywordList>
+    <OnlineResource xlink:href="https://wxs.ign.fr" xlink:type="simple"/>
+    <ContactInformation>
+      <ContactPersonPrimary>
+        <ContactPerson>Géoportail SAV</ContactPerson>
+        <ContactOrganization>IGN</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>custodian</ContactPosition>
+      <ContactAddress>
+        <AddressType/>
+        <Address>73 avenue de Paris</Address>
+        <City>Saint Mandé</City>
+        <StateOrProvince/>
+        <PostCode>94160</PostCode>
+        <Country>France</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+      <ContactElectronicMailAddress>geop_services@geoportail.fr</ContactElectronicMailAddress>
+    </ContactInformation>
+    <Fees>licences</Fees>
+    <AccessConstraints>Conditions Générales d'Utilisation disponibles ici : http://professionnels.ign.fr/doc/Conditions_d_utilisation_des_licences_et_des_services_en_ligne.pdf</AccessConstraints>
+  </Service>
+  <Capability>
+    <Request>
+      <GetCapabilities>
+        <Format>text/xml</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:href="https://wxs.ign.fr/metadata/geoportail/v/wms?SERVICE=WMS&amp;" xlink:type="simple"/>
+            </Get>
+            <Post>
+              <OnlineResource xlink:href="https://wxs.ign.fr/metadata/geoportail/v/wms?SERVICE=WMS&amp;" xlink:type="simple"/>
+            </Post>
+          </HTTP>
+        </DCPType>
+      </GetCapabilities>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>application/atom+xml</Format>
+        <Format>application/json;type=utfgrid</Format>
+        <Format>application/pdf</Format>
+        <Format>application/rss+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml</Format>
+        <Format>application/vnd.google-earth.kml+xml;mode=networklink</Format>
+        <Format>application/vnd.google-earth.kmz</Format>
+        <Format>image/geotiff</Format>
+        <Format>image/geotiff8</Format>
+        <Format>image/gif</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/png; mode=8bit</Format>
+        <Format>image/svg+xml</Format>
+        <Format>image/tiff</Format>
+        <Format>image/tiff8</Format>
+        <Format>image/vnd.jpeg-png</Format>
+        <Format>image/vnd.jpeg-png8</Format>
+        <Format>text/html; subtype=openlayers</Format>
+        <Format>text/html; subtype=openlayers2</Format>
+        <Format>text/html; subtype=openlayers3</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:href="https://wxs.ign.fr/metadata/geoportail/v/wms?SERVICE=WMS&amp;" xlink:type="simple"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>
+      <GetFeatureInfo>
+        <Format>text/plain</Format>
+        <Format>application/vnd.ogc.gml</Format>
+        <Format>text/xml</Format>
+        <Format>application/vnd.ogc.gml/3.1.1</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/html</Format>
+        <Format>application/json</Format>
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:href="https://wxs.ign.fr/metadata/geoportail/v/wms?SERVICE=WMS&amp;" xlink:type="simple"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetFeatureInfo>
+    </Request>
+    <Exception>
+      <Format>XML</Format>
+      <Format>INIMAGE</Format>
+      <Format>BLANK</Format>
+      <Format>JSON</Format>
+    </Exception>
+    <Layer>
+      <Title>WMS Vecteur Geoportail</Title>
+      <Abstract>Ce service permet la visualisation de couches de données vecteur IGN au travers d'un flux WMS</Abstract>
+      <!--Limited list of EPSG projections:-->
+      <CRS>EPSG:2154</CRS>
+      <CRS>EPSG:21781</CRS>
+      <CRS>EPSG:23030</CRS>
+      <CRS>EPSG:23031</CRS>
+      <CRS>EPSG:23032</CRS>
+      <CRS>EPSG:27561</CRS>
+      <CRS>EPSG:27562</CRS>
+      <CRS>EPSG:27563</CRS>
+      <CRS>EPSG:27564</CRS>
+      <CRS>EPSG:27571</CRS>
+      <CRS>EPSG:27572</CRS>
+      <CRS>EPSG:27573</CRS>
+      <CRS>EPSG:27574</CRS>
+      <CRS>EPSG:27581</CRS>
+      <CRS>EPSG:27582</CRS>
+      <CRS>EPSG:27583</CRS>
+      <CRS>EPSG:27584</CRS>
+      <CRS>EPSG:27591</CRS>
+      <CRS>EPSG:27592</CRS>
+      <CRS>EPSG:27593</CRS>
+      <CRS>EPSG:27594</CRS>
+      <CRS>EPSG:2969</CRS>
+      <CRS>EPSG:2970</CRS>
+      <CRS>EPSG:2971</CRS>
+      <CRS>EPSG:2972</CRS>
+      <CRS>EPSG:2973</CRS>
+      <CRS>EPSG:2975</CRS>
+      <CRS>EPSG:2976</CRS>
+      <CRS>EPSG:2977</CRS>
+      <CRS>EPSG:2978</CRS>
+      <CRS>EPSG:2980</CRS>
+      <CRS>EPSG:2981</CRS>
+      <CRS>EPSG:2986</CRS>
+      <CRS>EPSG:2987</CRS>
+      <CRS>EPSG:2988</CRS>
+      <CRS>EPSG:2989</CRS>
+      <CRS>EPSG:2990</CRS>
+      <CRS>EPSG:3034</CRS>
+      <CRS>EPSG:3035</CRS>
+      <CRS>EPSG:3042</CRS>
+      <CRS>EPSG:3043</CRS>
+      <CRS>EPSG:3044</CRS>
+      <CRS>EPSG:3170</CRS>
+      <CRS>EPSG:3171</CRS>
+      <CRS>EPSG:3172</CRS>
+      <CRS>EPSG:32620</CRS>
+      <CRS>EPSG:32621</CRS>
+      <CRS>EPSG:32622</CRS>
+      <CRS>EPSG:32630</CRS>
+      <CRS>EPSG:32631</CRS>
+      <CRS>EPSG:32632</CRS>
+      <CRS>EPSG:32705</CRS>
+      <CRS>EPSG:32706</CRS>
+      <CRS>EPSG:32707</CRS>
+      <CRS>EPSG:32738</CRS>
+      <CRS>EPSG:32739</CRS>
+      <CRS>EPSG:32740</CRS>
+      <CRS>EPSG:3296</CRS>
+      <CRS>EPSG:3297</CRS>
+      <CRS>EPSG:3298</CRS>
+      <CRS>EPSG:3302</CRS>
+      <CRS>EPSG:3303</CRS>
+      <CRS>EPSG:3304</CRS>
+      <CRS>EPSG:3305</CRS>
+      <CRS>EPSG:3306</CRS>
+      <CRS>EPSG:3727</CRS>
+      <CRS>EPSG:3857</CRS>
+      <CRS>EPSG:3942</CRS>
+      <CRS>EPSG:3943</CRS>
+      <CRS>EPSG:3944</CRS>
+      <CRS>EPSG:3945</CRS>
+      <CRS>EPSG:3946</CRS>
+      <CRS>EPSG:3947</CRS>
+      <CRS>EPSG:3948</CRS>
+      <CRS>EPSG:3949</CRS>
+      <CRS>EPSG:3950</CRS>
+      <CRS>EPSG:4171</CRS>
+      <CRS>EPSG:4258</CRS>
+      <CRS>EPSG:4275</CRS>
+      <CRS>EPSG:4326</CRS>
+      <CRS>EPSG:4463</CRS>
+      <CRS>EPSG:4467</CRS>
+      <CRS>EPSG:4470</CRS>
+      <CRS>EPSG:4471</CRS>
+      <CRS>EPSG:4558</CRS>
+      <CRS>EPSG:4559</CRS>
+      <CRS>EPSG:4621</CRS>
+      <CRS>EPSG:4622</CRS>
+      <CRS>EPSG:4623</CRS>
+      <CRS>EPSG:4624</CRS>
+      <CRS>EPSG:4625</CRS>
+      <CRS>EPSG:4626</CRS>
+      <CRS>EPSG:4627</CRS>
+      <CRS>EPSG:4628</CRS>
+      <CRS>EPSG:4629</CRS>
+      <CRS>EPSG:4630</CRS>
+      <CRS>EPSG:4632</CRS>
+      <CRS>EPSG:4633</CRS>
+      <CRS>EPSG:4636</CRS>
+      <CRS>EPSG:4637</CRS>
+      <CRS>EPSG:4638</CRS>
+      <CRS>EPSG:4639</CRS>
+      <CRS>EPSG:4641</CRS>
+      <CRS>EPSG:4642</CRS>
+      <CRS>EPSG:4643</CRS>
+      <CRS>EPSG:4644</CRS>
+      <CRS>EPSG:4687</CRS>
+      <CRS>EPSG:4688</CRS>
+      <CRS>EPSG:4689</CRS>
+      <CRS>EPSG:4690</CRS>
+      <CRS>EPSG:4691</CRS>
+      <CRS>EPSG:4692</CRS>
+      <CRS>EPSG:4749</CRS>
+      <CRS>EPSG:4807</CRS>
+      <CRS>EPSG:900913</CRS>
+      <CRS>CRS:84</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>-180.0</westBoundLongitude>
+        <eastBoundLongitude>1242444.4</eastBoundLongitude>
+        <southBoundLatitude>-90.0</southBoundLatitude>
+        <northBoundLatitude>7110478.8</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <BoundingBox CRS="CRS:84" maxx="1242444.4" maxy="7110478.8" minx="-180.0" miny="-90.0"/>
+      <Layer queryable="1">
+        <Name>CADASTRALPARCELS.GRAPHE</Name>
+        <Title>CADASTRALPARCELS.GRAPHE</Title>
+        <Abstract>Layer-Group type layer: CADASTRALPARCELS.GRAPHE</Abstract>
+        <KeywordList/>
+        <CRS>EPSG:3857</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-61.80958500478003</westBoundLongitude>
+          <eastBoundLongitude>55.83667989569937</eastBoundLongitude>
+          <southBoundLatitude>-21.38984989008148</southBoundLatitude>
+          <northBoundLatitude>51.08900031051782</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" maxx="55.83667989569937" maxy="51.08900031051782" minx="-61.80958500478003" miny="-21.38984989008148"/>
+        <BoundingBox CRS="EPSG:3857" maxx="6215710.77357627" maxy="6637051.97232497" minx="-6880611.52887567" miny="-2438425.19471587"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:href="https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;Id=IGNF_BDPARCELLAIREr_1-2.xml" xlink:type="simple"/>
+        </MetadataURL>
+        <MinScaleDenominator>1.0</MinScaleDenominator>
+        <MaxScaleDenominator>2.0E7</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE</Name>
+        <Title>GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE</Title>
+        <Abstract>Layer-Group type layer: GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE</Abstract>
+        <KeywordList/>
+        <CRS>EPSG:3857</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-178.2057322544516</westBoundLongitude>
+          <eastBoundLongitude>55.836676021800145</eastBoundLongitude>
+          <southBoundLatitude>-21.38985327009663</southBoundLatitude>
+          <northBoundLatitude>51.08938761677378</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" maxx="55.836676021800145" maxy="51.08938761677378" minx="-178.2057322544516" miny="-21.38985327009663"/>
+        <BoundingBox CRS="EPSG:3857" maxx="6215710.34233578" maxy="6637120.61435787" minx="-1.9837771371008E7" miny="-2438425.59881136"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:href="https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;Id=IGNF_SCAN25r_3-0.xml" xlink:type="simple"/>
+        </MetadataURL>
+        <MinScaleDenominator>1.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.0E7</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>ORTHOIMAGERY.ORTHO-SAT.SPOT.2015.GRAPHE-MOSAIQUAGE</Name>
+        <Title>ORTHOIMAGERY.ORTHO-SAT.SPOT.2015.GRAPHE-MOSAIQUAGE</Title>
+        <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHO-SAT.SPOT.2015.GRAPHE-MOSAIQUAGE</Abstract>
+        <KeywordList/>
+        <CRS>EPSG:3857</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-5.192596173253126</westBoundLongitude>
+          <eastBoundLongitude>9.644884959798665</eastBoundLongitude>
+          <southBoundLatitude>41.31611385248832</southBoundLatitude>
+          <northBoundLatitude>51.11178837965851</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" maxx="9.644884959798665" maxy="51.11178837965851" minx="-5.192596173253126" miny="41.31611385248832"/>
+        <BoundingBox CRS="EPSG:3857" maxx="1073663.68248449" maxy="6641091.66531035" minx="-578037.161901639" miny="5059080.79380597"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:href="https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;Id=SPOT5.xml" xlink:type="simple"/>
+        </MetadataURL>
+        <MinScaleDenominator>10000.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.0E7</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>ORTHOIMAGERY.ORTHO-SAT.SPOT.2016.GRAPHE-MOSAIQUAGE</Name>
+        <Title>ORTHOIMAGERY.ORTHO-SAT.SPOT.2016.GRAPHE-MOSAIQUAGE</Title>
+        <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHO-SAT.SPOT.2016.GRAPHE-MOSAIQUAGE</Abstract>
+        <KeywordList/>
+        <CRS>EPSG:3857</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-5.192596532083307</westBoundLongitude>
+          <eastBoundLongitude>9.614758765948139</eastBoundLongitude>
+          <southBoundLatitude>41.32801546919799</southBoundLatitude>
+          <northBoundLatitude>51.111788513424955</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" maxx="9.614758765948139" maxy="51.111788513424955" minx="-5.192596532083307" miny="41.32801546919799"/>
+        <BoundingBox CRS="EPSG:3857" maxx="1070310.04992551" maxy="6641091.68902928" minx="-578037.201846432" miny="5060844.9275401"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:href="https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;Id=SPOT5.xml" xlink:type="simple"/>
+        </MetadataURL>
+        <MinScaleDenominator>10000.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.0E7</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE</Name>
+        <Title>ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE</Title>
+        <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE</Abstract>
+        <KeywordList/>
+        <CRS>EPSG:3857</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-63.16065723435582</westBoundLongitude>
+          <eastBoundLongitude>55.84425655413142</eastBoundLongitude>
+          <southBoundLatitude>-21.399897362347634</southBoundLatitude>
+          <northBoundLatitude>51.08932742029653</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" maxx="55.84425655413142" maxy="51.08932742029653" minx="-63.16065723435582" miny="-21.399897362347634"/>
+        <BoundingBox CRS="EPSG:3857" maxx="6216554.20333484" maxy="6637109.94573809" minx="-7031012.20149698" miny="-2439626.45490568"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:href="https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;Id=IGNF_BDORTHOHistor_1-0.xml" xlink:type="simple"/>
+        </MetadataURL>
+      </Layer>
+      <Layer queryable="1">
+        <Name>ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE</Name>
+        <Title>ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE</Title>
+        <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE</Abstract>
+        <KeywordList/>
+        <CRS>EPSG:3857</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-178.18541495878412</westBoundLongitude>
+          <eastBoundLongitude>55.85384064994032</eastBoundLongitude>
+          <southBoundLatitude>-21.427303081539563</southBoundLatitude>
+          <northBoundLatitude>52.03247786180213</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" maxx="55.85384064994032" maxy="52.03247786180213" minx="-178.18541495878412" miny="-21.427303081539563"/>
+        <BoundingBox CRS="EPSG:3857" maxx="6217621.1" maxy="6806000.0" minx="-1.983550966E7" miny="-2442903.46"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:href="https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;Id=IGNF_BDORTHOr_2-0.xml" xlink:type="simple"/>
+        </MetadataURL>
+        <MinScaleDenominator>800.0</MinScaleDenominator>
+        <MaxScaleDenominator>1.0E7</MaxScaleDenominator>
+      </Layer>
+      <Layer queryable="1">
+        <Name>ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE</Name>
+        <Title>ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE</Title>
+        <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE</Abstract>
+        <KeywordList/>
+        <CRS>EPSG:3857</CRS>
+        <EX_GeographicBoundingBox>
+          <westBoundLongitude>-12.709172110341592</westBoundLongitude>
+          <eastBoundLongitude>15.046943035677202</eastBoundLongitude>
+          <southBoundLatitude>38.6417722198416</southBoundLatitude>
+          <northBoundLatitude>54.04417167149221</northBoundLatitude>
+        </EX_GeographicBoundingBox>
+        <BoundingBox CRS="CRS:84" maxx="15.046943035677202" maxy="54.04417167149221" minx="-12.709172110341592" miny="38.6417722198416"/>
+        <BoundingBox CRS="EPSG:3857" maxx="1675018.03672698" maxy="7178526.32220343" minx="-1414778.5677273" miny="4670487.64616884"/>
+        <MetadataURL type="TC211">
+          <Format>text/plain</Format>
+          <OnlineResource xlink:href="https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;Id=IGNF_BDORTHOr_2-0.xml" xlink:type="simple"/>
+        </MetadataURL>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>
