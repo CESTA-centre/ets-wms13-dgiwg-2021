@@ -52,7 +52,7 @@
 
   <properties>
     <ets-code>wms13-dgiwg-2021</ets-code>
-    <spec-version></spec-version>
+    <spec-version>2.1.0</spec-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <buildTimestamp>${maven.build.timestamp}</buildTimestamp>
   </properties>
