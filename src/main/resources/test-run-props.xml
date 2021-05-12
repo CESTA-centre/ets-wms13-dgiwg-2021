@@ -2,7 +2,7 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
   <comment>Test run arguments (ets-wms13-dgiwg-2021)</comment>
-  <entry key="wms"></entry>
+  <entry key="wms">https://wxs.ign.fr/metadata/geoportail/v/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities</entry>
   <entry key="vector">false</entry>
   <entry key="tes">http://cite.opengeospatial.org/te2/</entry>
 </properties>

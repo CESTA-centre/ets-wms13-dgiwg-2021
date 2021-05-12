@@ -26,38 +26,110 @@
 
   <test name="DGIWG WMS">
     <classes>
-      <!-- Basic service elements - 6.5 -->
+
+      <!-- DGIWG Requirement 3 : A WMS server shall provide the metadata content in response to a "GetCapabilities" or “GetFeatureInfo” (if supported) request in the English language.  
+      	   Metadata content may also be provided in additional languages, but English must always be included. -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest" />
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest" />
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest" />
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.interactive.GetCapabilitiesInEnglishLanguageTest" />
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoInEnglishLanguageTest" />
+      
+      <!-- DGIWG Requirement 4 : A WMS server shall provide tiles in at least one of the following raster formats  : 
+							• image/png (Portable Network Graphics) 
+							• image/gif (Graphics Interchange Format) 
+							• image/jpeg (Joint Photographics Expert Group). -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest" />
+      
+      <!-- DGIWG Requirement 5 : A  WMS server shall support the following coordinate reference systems, as a minimum: 
+								• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees 
+								• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees 
+ 							EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, 
+ 							the service shall support all those which validity zone overlaps data published by the service: 
+								• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 
+								• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760
+								• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 
+							Each WMS service instance does not have to provide its data in all these CRSs.      -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest" />
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest"/>
+      
+      <!-- DGIWG Requirement 6 : A WMS server shall provide the service exceptions in the English language.  
+      						Exception text content may also be provided in additional languages, but English must always be included. -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoExceptionInEnglishLanguageTest" />
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.interactive.GetMapExceptionInEnglishLanguageTest" />
+      
+      
       <!-- GetCapabilities Operation - 6.6.1, 6.6.2 -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest" />
+      
+      <!-- DGIWG Requirement 7 : A WMS server shall provide an "Abstract" at the service level, in the GetCapabilities response document. -->
+      
+      <!-- DGIWG Requirement 7 : A WMS server shall provide an "Abstract" at the service level, in the GetCapabilities response document. -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest" />
+               
+      <!-- DGIWG Requirement 8 : A WMS server SHALL use the <AccessContraints>  element to hold the classification information for this web service instance." -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest" />
+      
+      <!-- DGIWG Requirement 9 : If a WMS server is providing services to a coalition mission federated network, in support of operations or an exercise, 
+    							it shall include the following information in the <abstract> element of the service metadata: 
+    							"This service implements the WMS 1.3 STANAG 6523 Ed.2 profile". 
+    							The provision of these metadata elements are optional for a WMS server which is providing services
+    							across one single non-mission network.-->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest" />
-      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest" />
+	
+	  <!-- DGIWG Requirement 10 : A DGIWG basic WMS server shall provide a minimum keyword list based on the DGIM (DGIWG Geospatial Information Model) groups.-->
+	  <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest" />
+	  
+	  <!-- DGIWG Requirement 11 : A DGIWG Basic WMS server shall provide information (Name and Title) one the supported styles -->    
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest" />
+      
+      <!-- DGIWG Requirement 12 : A WMS server shall always provide at least one style element and that style shall be advertised even if it's only the default style.  -->     
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerStyleTest" />
+      
+      <!-- DGIWG Requirement 13 : The MaxWidth and MaxHeight shall be greater or equal to 800 pixels or omitted (meaning no constraint) -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest" />
+      
+      <!--  DGIWG Requirement 14 : Each layer's style shall have an associated legend if warranted, available as an image in one of the following formats : PNG, GIF or JPEG. -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendFormatTest" />
-      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest" />
+      
+      <!-- DGIWG Requirement 15 : If legend is present (see req 13), the <LegendURL> element shall contain a URL to allow access to an image of the legend. 
+								   Note : This URL will relate to the source system and may not be resolvable on all connected/unconnected systems or applications. 
+								   This requirement is conditional on the <LegendURL> being relevant to the generated service.-->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest" />   
+      
+      <!-- DGIWG Requirement 16 : When scale denominators are both specified, the <MinScaleDenominator> value shall always 
+      							   be less than or equal to the <MaxScaleDenominator> value. -->
+      <!--  Check if less than or equal -->							   
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerScaleDenominatorsTest" />
+      <!--  Check if specified -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMinMaxScaleDenominatorsTest" />
+      
+      <!-- DGIWG Requirement 17 : If <FeatureListURL> element is present, its value shall be a URL to allow access to a list of features available in a particular layer.
+								   NOTE :  This URL will relate to the source system and may not be resolvable on all connected/unconnected systems or applications. 
+								   This requirement is conditional on the <FeatureListURL> being relevant to the generated service.  -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesFeatureListUrlTest" />
+      
+      <!-- DGIWG Requirement 18 : If <DataListURL> element is present, its value shall be a URL to allow access to a list of features available in a particular layer.
+								  NOTE :  This URL will relate to the source system and may not be resolvable on all connected/unconnected systems or applications.
+								  This requirement is conditional on the <DataListURL> being relevant to the generated service.  -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesDataUrlTest" />
+      
+      <!-- DGIWG Requirement 19 : A WMS server shall provide the Layer Attributes with following restrictions on their values : noSubsets (0, false), fixedWidth (0), FixedHeight (0). -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerAttributesTest" />
+      
       <!-- GetMap Operation - 6.6.3, 6.6.4 -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest" />
+      
+      <!-- DGIWG Requirement 20 : A DGIWG Basic WMS server shall support transparency. -->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest" />
+      
+      <!--  DGIWG Requirement 21 : A WMS server shall support the INIMAGE EXCEPTIONS.-->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest" />
+      
+      <!--  DGIWG Requirement 22 : A WMS server shall support the BLANK EXCEPTIONS.-->
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest" />
+      
+      
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest" />
       <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest" />
       <!-- GetFeatureInfo Operation - 6.6.5, 6.6.6 -->
