@@ -21,6 +21,12 @@ public final class DGIWGWMS {
 
     /** Local name of document element in WMS capabilities document. */
     public static final String WMS_CAPABILITIES = "WMS_Capabilities";
+    
+    /** Local name of document element in Exception document. */
+    public static final String EXCEPTION_REPORT = "ExceptionReport";
+    
+	/** Type of the returned document (Exceptionreport or WMS Capabilities) */
+    public static String DOCTYPE = "wms";
 
     /** common request values **/
     public static final String SERVICE_TYPE_CODE = "WMS";

@@ -32,6 +32,20 @@ public final class WmsAssertion {
         assertQualifiedName( doc.getDocumentElement(), new QName( WmsNamespaces.WMS, DGIWGWMS.WMS_CAPABILITIES ) );
     }
 
+    
+    /**
+     * Asserts that the given DOM document has the expected root element 'ows:ExceptionReport' in namespace
+     * {http://www.opengis.net/ows}.
+     * @param doc
+     * A Document node having {http://www.opengis.net/wms} {@value DGIWGWMS#EXCEPTION_REPORT} as the root
+     *            element.
+     */
+    public static void assertSimpleException( Document doc ) {
+        assertQualifiedName( doc.getDocumentElement(), new QName( WmsNamespaces.EXCEPTION, DGIWGWMS.EXCEPTION_REPORT ) );
+    }
+
+    
+    
     /**
      * Asserts that the actual content type matches the expected content type.
      *

@@ -1,22 +1,32 @@
 package de.latlon.ets.wms13.core.util.interactive;
 
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_FEATURE_INFO;
+import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_CAPABILITIES;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_MAP;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.LAYERS_PARAM;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.QUERY_LAYERS_PARAM;
 import static de.latlon.ets.wms13.core.domain.ProtocolBinding.GET;
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.getOperationEndpoint;
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseLayerInfo;
+import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseCapabilityTitles;
 import static de.latlon.ets.wms13.core.util.request.WmsRequestBuilder.buildGetFeatureInfoRequest;
 import static de.latlon.ets.wms13.core.util.request.WmsRequestBuilder.buildGetMapRequest;
 
 import java.net.URI;
 import java.util.List;
+import java.util.logging.Level;
 
 import javax.ws.rs.core.UriBuilder;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
+import de.latlon.ets.core.util.TestSuiteLogger;
 import de.latlon.ets.core.util.URIUtils;
 import de.latlon.ets.wms13.core.client.WmsKvpRequest;
 import de.latlon.ets.wms13.core.domain.DGIWGWMS;
@@ -84,6 +94,19 @@ public final class InteractiveTestUtils {
         WmsKvpRequest getFeatureInfoRequest = buildGetMapRequest( wmsCapabilities, layerInfos );
         getFeatureInfoRequest.addKvp( LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
         return createUri( getFeatureInfoEndpoint, getFeatureInfoRequest );
+    }
+    
+    /**
+     * Get title of GetCapabilities document.
+     * 
+     * @param wmsCapabilitiesUrl
+     *            the url of the WMS capabilities, never <code>null</code>
+     * @return a the title of capabilities document.
+     */
+    public static String retrieveTitleInLocaleLanguage( String wmsCapabilitiesUrl ) {
+    	Document wmsCapabilities = readCapabilities( wmsCapabilitiesUrl );
+        List<String> sentence = parseCapabilityTitles( wmsCapabilities );	
+        return sentence.get(0);
     }
 
     private static String createUri( URI getFeatureInfoEndpoint, WmsKvpRequest getFeatureInfoRequest ) {

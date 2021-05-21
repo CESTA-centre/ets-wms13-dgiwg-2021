@@ -8,6 +8,7 @@ import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.UriBuilder;
 import javax.xml.transform.Source;
 
+import org.testng.ITestContext;
 import org.w3c.dom.Document;
 
 import com.sun.jersey.api.client.Client;
@@ -21,6 +22,7 @@ import com.sun.jersey.api.client.filter.LoggingFilter;
 import com.sun.jersey.core.util.MultivaluedMapImpl;
 
 import de.latlon.ets.core.util.XMLUtils;
+import de.latlon.ets.wms13.core.TestRunArg;
 import de.latlon.ets.wms13.core.domain.DGIWGWMS;
 import de.latlon.ets.wms13.core.domain.ProtocolBinding;
 import de.latlon.ets.wms13.core.util.SOAPMessageConsumer;
@@ -58,19 +60,25 @@ public class WmsClient {
     /**
      * Retrieves a complete representation of the capabilities document from the WMS implementation described by the
      * service metadata.
-     * 
+     * @param testContext nc
      * @return a document containing the response to a GetCapabilities request
      */
-    public Document getCapabilities() {
+    public Document getCapabilities(ITestContext testContext) {
         if ( null == this.wmsCapabilities ) {
             throw new IllegalStateException( "Service description is unavailable." );
         }
         URI endpoint = ServiceMetadataUtils.getOperationEndpoint( this.wmsCapabilities, DGIWGWMS.GET_CAPABILITIES,
                                                                   ProtocolBinding.GET );
         if (null == endpoint) {
-            throw new RuntimeException("GetCapabilities (GET) endpoint not found in capabilities document.");
+        	if(DGIWGWMS.DOCTYPE.equals("exception"))
+        	{
+        		endpoint = URI.create(testContext.getSuite().getParameter(TestRunArg.WMS.toString()));
+        	}else {
+        		throw new RuntimeException("GetCapabilities (GET) endpoint not found in capabilities document.");
+        	}
         }
         WebResource resource = client.resource( endpoint );
+
         MultivaluedMap<String, String> queryParams = new MultivaluedMapImpl();
         queryParams.add( DGIWGWMS.REQUEST_PARAM, DGIWGWMS.GET_CAPABILITIES );
         queryParams.add( DGIWGWMS.SERVICE_PARAM, DGIWGWMS.SERVICE_TYPE_CODE );
@@ -122,6 +130,8 @@ public class WmsClient {
         } catch ( UniformInterfaceException | ClientHandlerException ex ) {
             LOGR.log( Level.SEVERE, "Failed to process SOAP request/response: " + resource.getURI(), ex );
         }
+        System.out.println("!!!"+response.getLanguage());
+        
         return response;
     }
 

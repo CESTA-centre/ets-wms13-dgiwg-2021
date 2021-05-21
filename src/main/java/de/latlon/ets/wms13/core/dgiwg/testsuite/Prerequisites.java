@@ -1,6 +1,7 @@
 package de.latlon.ets.wms13.core.dgiwg.testsuite;
 
 import static de.latlon.ets.wms13.core.assertion.WmsAssertion.assertSimpleWMSCapabilities;
+import static de.latlon.ets.wms13.core.assertion.WmsAssertion.assertSimpleException;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 
@@ -31,8 +32,15 @@ public class Prerequisites {
      */
     @Test
     public void verifyServiceDescription(ITestContext testContext) {
+
         Document wmsMetadata = (Document) testContext.getSuite().getAttribute(SuiteAttribute.TEST_SUBJECT.getName());
-        assertSimpleWMSCapabilities(wmsMetadata);
+        
+        if(DGIWGWMS.DOCTYPE.equals("wms")) {
+        	assertSimpleWMSCapabilities(wmsMetadata);
+        }else if(DGIWGWMS.DOCTYPE.equals("exception")) {
+        	assertSimpleException(wmsMetadata);
+        }
+        
     }
 
     /**
@@ -50,13 +58,14 @@ public class Prerequisites {
     public void serviceIsAvailable(ITestContext testContext) {
         Document wmsMetadata = (Document) testContext.getSuite().getAttribute(SuiteAttribute.TEST_SUBJECT.getName());
         WmsClient wmsClient = new WmsClient(wmsMetadata);
-        Document capabilities = wmsClient.getCapabilities();
+        Document capabilities = wmsClient.getCapabilities(testContext);
         assertNotNull(capabilities, "No GetCapabilities response from SUT.");
         Element docElement = capabilities.getDocumentElement();
         assertEquals(docElement.getLocalName(), DGIWGWMS.WMS_CAPABILITIES,
                 "Capabilities document element has unexpected [local name].");
         assertEquals(docElement.getNamespaceURI(), WmsNamespaces.WMS,
                 "Capabilities document element has unexpected [namespace name].");
+
     }
 
 }

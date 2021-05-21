@@ -51,6 +51,7 @@ public class ConfiguredOutputFormatTest extends AbstractBaseGetCapabilitiesFixtu
     @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3")
     public void wmsCapabilitiesOutputFormatGetCapabilitiesTextXmlSupported()
                     throws SOAPException {
+
         URI endpoint = ServiceMetadataUtils.getOperationEndpoint( this.wmsCapabilities, GET_CAPABILITIES,
                                                                   ProtocolBinding.GET );
 

@@ -8,6 +8,7 @@ import java.io.InputStream;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.testng.ITestContext;
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 
@@ -19,11 +20,11 @@ import de.latlon.ets.wms13.core.domain.WmsNamespaces;
  */
 public class WmsClientIT {
 
-    public void testgetCapabilities()
+    public void testgetCapabilities(ITestContext testContext)
                     throws Exception {
         WmsClient wmsClient = new WmsClient( wmsCapabilities() );
 
-        Document capabilities = wmsClient.getCapabilities();
+        Document capabilities = wmsClient.getCapabilities(testContext);
         assertThat( capabilities.getLocalName(), is( DGIWGWMS.WMS_CAPABILITIES ) );
         assertThat( capabilities.getNamespaceURI(), is( WmsNamespaces.WMS ) );
     }

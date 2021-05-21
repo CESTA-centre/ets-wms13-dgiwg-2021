@@ -84,6 +84,11 @@
           <ctl:with-param name="wms.capabilities.url" select="normalize-space($form-data/values/value[@key='wms-uri'])" />
         </ctl:call-function>
       </xsl:variable>
+      <xsl:variable name="getTitleInLocaleLanguage">
+        <ctl:call-function name="interactive:titleInLocaleLanguage">
+          <ctl:with-param name="wms.capabilities.url" select="normalize-space($form-data/values/value[@key='wms-uri'])" />
+        </ctl:call-function>
+      </xsl:variable>
       <xsl:variable name="test-run-props">
         <properties version="1.0">
           <entry key="wms">

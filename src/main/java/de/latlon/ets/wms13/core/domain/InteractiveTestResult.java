@@ -14,14 +14,18 @@ public class InteractiveTestResult {
     private final boolean getFeatureInfoExceptionInEnglishLanguage;
 
     private final boolean getMapExceptionInEnglishLanguage;
+    
+    private final boolean getTitleInLocaleLanguage;
 
     public InteractiveTestResult( boolean capabilitiesInEnglishLanguage, boolean getFeatureInfoInEnglishLanguage,
                                   boolean getFeatureInfoExceptionInEnglishLanguage,
-                                  boolean getMapExceptionInEnglishLanguage ) {
+                                  boolean getMapExceptionInEnglishLanguage,
+                                  boolean getTitleInLocaleLanguage ) {
         this.capabilitiesInEnglishLanguage = capabilitiesInEnglishLanguage;
         this.getFeatureInfoInEnglishLanguage = getFeatureInfoInEnglishLanguage;
         this.getFeatureInfoExceptionInEnglishLanguage = getFeatureInfoExceptionInEnglishLanguage;
         this.getMapExceptionInEnglishLanguage = getMapExceptionInEnglishLanguage;
+        this.getTitleInLocaleLanguage = getTitleInLocaleLanguage;
     }
 
     /**
@@ -51,6 +55,13 @@ public class InteractiveTestResult {
      */
     public boolean isGetMapExceptionInEnglishLanguage() {
         return getMapExceptionInEnglishLanguage;
+    }
+    
+    /**
+     * @return <code>true</code> if the test (capabilities in english language) passed, <code>false</code> otherwise
+     */
+    public boolean isTitleInLocaleLanguage() {
+        return getTitleInLocaleLanguage;
     }
 
 }

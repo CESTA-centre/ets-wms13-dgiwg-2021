@@ -30,6 +30,7 @@ import org.w3c.dom.NodeList;
 import de.latlon.ets.core.util.NamespaceBindings;
 import de.latlon.ets.core.util.TestSuiteLogger;
 import de.latlon.ets.wms13.core.domain.BoundingBox;
+import de.latlon.ets.wms13.core.domain.DGIWGWMS;
 import de.latlon.ets.wms13.core.domain.Dimension;
 import de.latlon.ets.wms13.core.domain.LayerInfo;
 import de.latlon.ets.wms13.core.domain.ProtocolBinding;
@@ -74,10 +75,10 @@ public final class ServiceMetadataUtils {
         }
         if ( binding == null )
             return null;
-
-        String expr = "//wms:Request/wms:%s/wms:DCPType/wms:HTTP/wms:%s/wms:OnlineResource/@xlink:href";
+        
+    	String expr = "//wms:Request/wms:%s/wms:DCPType/wms:HTTP/wms:%s/wms:OnlineResource/@xlink:href";
         String xPathExpr = String.format( expr, opName, binding.getElementName() );
-
+        
         String href = null;
         try {
             XPath xPath = createXPath();
@@ -167,6 +168,35 @@ public final class ServiceMetadataUtils {
             throw new RuntimeException( "Error parsing layer infos from doc. ", e );
         }
         return layerInfos;
+    }
+    
+    /**
+     * Parses all named Title from the capabilities document.
+     *
+     * @param wmsCapabilities
+     *            the capabilities document (wms:WMS_Capabilities), never <code>null</code>
+     * @return a list of Titles supported by the WMS, never <code>null</code>
+     */
+    public static List<String> parseCapabilityTitles( Document wmsCapabilities ) {
+        ArrayList<String> titles = new ArrayList<>();
+        String expr = "//wms:WMS_Capabilities/wms:Service/wms:Title";
+        String xPathExpr = String.format(expr);
+
+		try {
+			XPath xPath = createXPath();
+			NodeList formatNodes = (NodeList) xPath.evaluate(xPathExpr, wmsCapabilities, XPathConstants.NODESET);
+			for (int formatNodeIndex = 0; formatNodeIndex < formatNodes.getLength(); formatNodeIndex++) {
+				Node formatNode = formatNodes.item(formatNodeIndex);
+				String format = formatNode.getTextContent();
+				if (format != null && !format.isEmpty())
+					titles.add(format);
+			}
+		}
+		catch ( XPathExpressionException xpe ) {
+			throw new RuntimeException( "Error evaluating XPath expression against capabilities doc. ", xpe );
+        }
+		System.out.println("!!! Title = " + titles);
+        return titles;
     }
 
     /**

@@ -3,7 +3,10 @@ package de.latlon.ets.wms13.core;
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseLayerInfo;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URI;
+import java.net.URL;
 import java.util.Map;
 import java.util.logging.Level;
 
@@ -11,6 +14,7 @@ import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.Reporter;
 import org.w3c.dom.Document;
+import org.w3c.dom.DocumentType;
 
 import de.latlon.ets.core.util.TestSuiteLogger;
 import de.latlon.ets.core.util.URIUtils;
@@ -65,13 +69,20 @@ public class SuiteFixtureListener implements ISuiteListener {
             throw new IllegalArgumentException( "Required parameter not found" );
         }
         URI wmsURI = URI.create( wmsRef );
+              
         Document doc = null;
         try {
             doc = URIUtils.resolveURIAsDocument( wmsURI );
-            if ( !DGIWGWMS.WMS_CAPABILITIES.equals( doc.getDocumentElement().getLocalName() ) ) {
+            
+            if( DGIWGWMS.WMS_CAPABILITIES.equals( doc.getDocumentElement().getLocalName()) ){
+            	DGIWGWMS.DOCTYPE = "wms";
+            }else if ("ows:ExceptionReport".equals( doc.getDocumentElement().getNodeName() )){
+            	DGIWGWMS.DOCTYPE = "exception";
+            }else {            	
                 throw new RuntimeException( "Did not receive WMS capabilities document: "
                                             + doc.getDocumentElement().getNodeName() );
             }
+
         } catch ( Exception ex ) {
             // push exception up through TestNG ISuiteListener interface
             throw new RuntimeException( "Failed to parse resource located at " + wmsURI, ex );
@@ -82,6 +93,7 @@ public class SuiteFixtureListener implements ISuiteListener {
             suite.setAttribute( SuiteAttribute.IS_VECTOR.getName(), parseBoolean( params, TestRunArg.VECTOR ) );
             suite.setAttribute( SuiteAttribute.INTERACTIVE_TEST_RESULT.getName(), parseInteractiveTestResults( params ) );
         }
+        
     }
 
     private Object parseInteractiveTestResults( Map<String, String> params ) {
@@ -90,8 +102,9 @@ public class SuiteFixtureListener implements ISuiteListener {
         boolean getFeatureInfoExceptionInEnglishLanguage = parseBoolean( params,
                                                                          TestRunArg.GETFEATUREINFO_EXCEPTION_IN_ENGLISH );
         boolean getMapExceptionInEnglishLanguage = parseBoolean( params, TestRunArg.GETMAP_EXCEPTION_IN_ENGLISH );
+        boolean getTitleInLocaleLanguage = parseBoolean( params, TestRunArg.CAPABILITIES_TITLE_IN_LOCALE);
         return new InteractiveTestResult( capabilitiesInEnglishLanguage, getFeatureInfoInEnglishLanguage,
-                        getFeatureInfoExceptionInEnglishLanguage, getMapExceptionInEnglishLanguage );
+                        getFeatureInfoExceptionInEnglishLanguage, getMapExceptionInEnglishLanguage, getTitleInLocaleLanguage);
     }
 
     private boolean parseBoolean( Map<String, String> params, TestRunArg arg ) {

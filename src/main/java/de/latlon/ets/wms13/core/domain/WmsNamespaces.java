@@ -18,9 +18,14 @@ public final class WmsNamespaces {
 
     /** OGC 06-042 (WMS 1.3) */
     public static final String WMS = "http://www.opengis.net/wms";
+    
+    public static final String EXCEPTION = "http://www.opengis.net/ows";
 
     /** W3C XLink */
     public static final String XLINK = "http://www.w3.org/1999/xlink";
+    
+    /** XML */
+    public static final String XML= "http://www.w3.org/XML/1998/namespace";
 
     /** GML */
     public static final String GML = "http://www.opengis.net/gml";
@@ -41,10 +46,12 @@ public final class WmsNamespaces {
     public static NamespaceBindings withStandardBindings() {
         NamespaceBindings nsBindings = new NamespaceBindings();
         nsBindings.addNamespaceBinding( WmsNamespaces.WMS, "wms" );
+        nsBindings.addNamespaceBinding( WmsNamespaces.EXCEPTION, "ows" );
         nsBindings.addNamespaceBinding( WmsNamespaces.XLINK, "xlink" );
         nsBindings.addNamespaceBinding( XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI, "xsi" );
         nsBindings.addNamespaceBinding( WmsNamespaces.GML, "gml" );
         nsBindings.addNamespaceBinding( WmsNamespaces.SOAPWMS, "soapwms" );
+        nsBindings.addNamespaceBinding( WmsNamespaces.XML, "xml" );
         return nsBindings;
     }
     
