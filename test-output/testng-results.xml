@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1007" started-at="2021-05-20T14:00:44Z" finished-at="2021-05-20T14:00:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1007" started-at="2021-05-20T14:00:44Z" finished-at="2021-05-20T14:00:45Z">
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@8dbdac1]" name="initBaseFixture" is-config="true" duration-ms="652" started-at="2021-05-20T16:00:44Z" finished-at="2021-05-20T16:00:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3cce5371]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="PASS" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@8dbdac1]" name="initParser" is-config="true" duration-ms="293" started-at="2021-05-20T16:00:45Z" finished-at="2021-05-20T16:00:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="PASS" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@8dbdac1]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="3" started-at="2021-05-20T16:00:45Z" finished-at="2021-05-20T16:00:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesFormatIsAccepted(java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@8dbdac1]" name="wmsCapabilitiesFormatIsAccepted" duration-ms="0" started-at="2021-05-20T16:00:45Z" description="DGIWG - Web Map Service 1.3 Profile, Requirement 22" data-provider="acceptLanguage" finished-at="2021-05-20T16:00:45Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesFormatIsAccepted -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

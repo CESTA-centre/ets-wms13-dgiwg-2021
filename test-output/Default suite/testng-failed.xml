@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest">
+        <methods>
+          <include name="initParser"/>
+          <include name="initBaseFixture"/>
+          <include name="buildGetCapabilitiesRequest"/>
+          <include name="wmsCapabilitiesFormatIsAccepted"/>
+        </methods>
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
