@@ -60,7 +60,7 @@ public class InteractiveTestResult {
     /**
      * @return <code>true</code> if the test (capabilities in english language) passed, <code>false</code> otherwise
      */
-    public boolean isTitleInLocaleLanguage() {
+    public boolean isGetTitleInLocaleLanguage() {
         return getTitleInLocaleLanguage;
     }
 

@@ -28,6 +28,7 @@
     
    	  <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptFormatsTest" />
    	  <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest" />
+   	  <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException" />
 	
       <!-- DGIWG Requirement 3 : A WMS server shall provide the metadata content in response to a "GetCapabilities" or “GetFeatureInfo” (if supported) request in the English language.  
       	   Metadata content may also be provided in additional languages, but English must always be included. -->

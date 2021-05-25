@@ -6,8 +6,9 @@
   <!--<entry key="wms">https://demo.geo-solutions.it/geoserver/ows?service=wms&amp;version=1.3.0&amp;AcceptFormats=image/png,text/plain,application/x-bxml,application/pdf,text/xml&amp;request=GetCapabilities</entry>-->
   <!-- <entry key="wms">https://demo.geo-solutions.it/geoserver/ows?service=wms&amp;version=1.3.0&amp;request=GetCapabilities&amp;AcceptLanguages=test</entry>-->
   <!--<entry key="wms">https://dgiwg.ign.fr/geoserver/wms?request=getCapabilities&amp;version=1.1.1&amp;version=1.3.0&amp;AcceptLanguages=en,fr</entry>-->
-  <entry key="wms">https://demo.geo-solutions.it/geoserver/ows?service=wms&amp;version=1.3.0&amp;request=GetCapabilities</entry>
+  <!--<entry key="wms">https://demo.geo-solutions.it/geoserver/ows?service=wms&amp;version=1.3.0&amp;request=GetCapabilities</entry>-->
   <!-- <entry key="wms">file:///home/adminCESTA/Documents/OGCets_eclipse-workspace/ets-wms13-dgiwg-2021/src/main/resources/wms13Capabilities.xml</entry>-->
+  <entry key="wms">https://wxs.ign.fr/metadata/geoportail/v/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;version=1.1.1&amp;version=1.3.0</entry>
   <entry key="vector">false</entry>
   <entry key="tes">http://cite.opengeospatial.org/te2/</entry>
 </properties>

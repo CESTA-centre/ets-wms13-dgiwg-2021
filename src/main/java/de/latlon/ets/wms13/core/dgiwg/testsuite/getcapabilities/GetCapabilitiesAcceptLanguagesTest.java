@@ -1,13 +1,11 @@
 package de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities;
 
-import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_CAPABILITIES;
+import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,34 +15,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
-import javax.xml.xpath.XPathFactoryConfigurationException;
 
+import org.testng.ISuite;
 import org.testng.ITestContext;
-import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
-import com.sun.jersey.core.header.reader.HttpHeaderReader;
 
 import de.latlon.ets.core.util.TestSuiteLogger;
 import de.latlon.ets.wms13.core.TestRunArg;
-import de.latlon.ets.wms13.core.domain.InteractiveTestResult;
-import de.latlon.ets.wms13.core.domain.SuiteAttribute;
-import de.latlon.ets.wms13.core.util.ServiceMetadataUtils;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 
 /**
  * Tests if the AcceptLanguages values are resolvable.
@@ -204,15 +188,14 @@ public class GetCapabilitiesAcceptLanguagesTest extends AbstractBaseGetCapabilit
 	}
 
 
-	public boolean getTitleInLocaleLanguage(ITestContext testContext) {
-        Object attribute = testContext.getSuite().getAttribute( SuiteAttribute.INTERACTIVE_TEST_RESULT.getName() );
-        if ( attribute == null )
-            throw new SkipException( "Missing testresult!" );
-
-        InteractiveTestResult interactiveTestResult = (InteractiveTestResult) attribute;
-        boolean isInLocaleLanguage = interactiveTestResult.isCapabilitiesInEnglishLanguage();
-        return isInLocaleLanguage;
-	}
+    private boolean parseBoolean( Map<String, String> params, TestRunArg arg ) {
+        String key = arg.toString();
+        if ( params.containsKey( key ) ) {
+            String vectorParam = params.get( key );
+            return Boolean.parseBoolean( vectorParam );
+        }
+        return false;
+    }
 	
 	
 	@DataProvider(name = "acceptLanguage")
@@ -228,9 +211,12 @@ public class GetCapabilitiesAcceptLanguagesTest extends AbstractBaseGetCapabilit
 			expectedLanguage = http_accept_language(testContext); //Get language response : must be in the locale language
 			// Ask user if ok --> interactive
 			System.out.println("!!!!! la");
-			boolean resp = false;
-			resp = getTitleInLocaleLanguage(testContext);
-			if(resp)
+			//getTitleInLocaleLanguage(testContext);
+			ISuite suite = testContext.getSuite();
+			Map<String, String> params = suite.getXmlSuite().getParameters();
+			boolean resp = parseBoolean(params, TestRunArg.CAPABILITIES_TITLE_IN_LOCALE);
+			System.out.println("!!!!! resp = " + resp);
+			if(!resp)
 				actualLanguage = "*";
 
 		}else {	

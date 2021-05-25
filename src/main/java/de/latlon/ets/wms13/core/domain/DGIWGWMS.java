@@ -25,6 +25,8 @@ public final class DGIWGWMS {
     /** Local name of document element in Exception document. */
     public static final String EXCEPTION_REPORT = "ExceptionReport";
     
+    public static final String OGC_EXCEPTION = "ServiceExceptionReport";
+    
 	/** Type of the returned document (Exceptionreport or WMS Capabilities) */
     public static String DOCTYPE = "wms";
 

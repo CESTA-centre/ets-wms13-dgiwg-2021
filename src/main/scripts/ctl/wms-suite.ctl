@@ -116,6 +116,9 @@
           <entry key="getmap_exception_in_english">
             <xsl:value-of select="$getMapExceptionInEnglishLanguage" />
           </entry>
+            <entry key="capabilities_title_in_locale">
+            <xsl:value-of select="$getTitleInLocaleLanguage" />
+          </entry>
         </properties>
       </xsl:variable>
       <xsl:variable name="testRunDir">

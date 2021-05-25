@@ -104,9 +104,14 @@ public final class InteractiveTestUtils {
      * @return a the title of capabilities document.
      */
     public static String retrieveTitleInLocaleLanguage( String wmsCapabilitiesUrl ) {
-    	Document wmsCapabilities = readCapabilities( wmsCapabilitiesUrl );
-        List<String> sentence = parseCapabilityTitles( wmsCapabilities );	
-        return sentence.get(0);
+    	System.out.println("!!!! ICI");
+    	//System.out.println("!!!! wmsCapabilitiesUrl = " + wmsCapabilitiesUrl);
+    	//Document wmsCapabilities = readCapabilities( wmsCapabilitiesUrl );
+    	System.out.println("!!!! ICI ok");
+        //List<String> sentence = parseCapabilityTitles( wmsCapabilities );	
+        //System.out.println("!!!! LA ok" + sentence);
+        //return sentence.get(0);
+    	return null;
     }
 
     private static String createUri( URI getFeatureInfoEndpoint, WmsKvpRequest getFeatureInfoRequest ) {
