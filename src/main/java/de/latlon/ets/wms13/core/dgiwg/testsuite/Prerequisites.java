@@ -2,6 +2,7 @@ package de.latlon.ets.wms13.core.dgiwg.testsuite;
 
 import static de.latlon.ets.wms13.core.assertion.WmsAssertion.assertSimpleWMSCapabilities;
 import static de.latlon.ets.wms13.core.assertion.WmsAssertion.assertSimpleException;
+import static de.latlon.ets.wms13.core.assertion.WmsAssertion.assertSimpleOGCException;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 
@@ -39,6 +40,8 @@ public class Prerequisites {
         	assertSimpleWMSCapabilities(wmsMetadata);
         }else if(DGIWGWMS.DOCTYPE.equals("exception")) {
         	assertSimpleException(wmsMetadata);
+        }else if(DGIWGWMS.DOCTYPE.equals("ogcexception")) {
+        	assertSimpleOGCException(wmsMetadata);
         }
         
     }
@@ -61,10 +64,12 @@ public class Prerequisites {
         Document capabilities = wmsClient.getCapabilities(testContext);
         assertNotNull(capabilities, "No GetCapabilities response from SUT.");
         Element docElement = capabilities.getDocumentElement();
+        if(DGIWGWMS.DOCTYPE.equals("wms")) {
         assertEquals(docElement.getLocalName(), DGIWGWMS.WMS_CAPABILITIES,
                 "Capabilities document element has unexpected [local name].");
         assertEquals(docElement.getNamespaceURI(), WmsNamespaces.WMS,
                 "Capabilities document element has unexpected [namespace name].");
+        }
 
     }
 

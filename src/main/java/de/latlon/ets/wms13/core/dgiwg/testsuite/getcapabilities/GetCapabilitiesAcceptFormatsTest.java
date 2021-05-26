@@ -60,7 +60,7 @@ public class GetCapabilitiesAcceptFormatsTest extends AbstractBaseGetCapabilitie
 					acceptFormats.add("text/xml");
 		}
 
-		String docMimeType = getResourceType(testContext);
+		String docMimeType = getResourceType(testContext).split(";")[0];
 /*
 		URL wmsurl = new URL(value);
 		URLConnection urlconn = wmsurl.openConnection();
@@ -85,8 +85,8 @@ public class GetCapabilitiesAcceptFormatsTest extends AbstractBaseGetCapabilitie
 	
 	@Test(description = "DGIWG - Web Map Service 1.3 Profile, Requirement 22", dataProvider = "acceptFormats")
     public void wmsCapabilitiesFormatIsAccepted(String actual, String expected) {
-    	assertTrue(actual.contains(expected), "Response is not in the expected format : expected " + expected +" but have " + actual + "\n");
-    }
+    	assertEquals(actual, expected);
+	}
 
 	  /**
 	   * Retrieves parameters and their value(s) of request.

@@ -70,7 +70,7 @@ public class WmsClient {
         URI endpoint = ServiceMetadataUtils.getOperationEndpoint( this.wmsCapabilities, DGIWGWMS.GET_CAPABILITIES,
                                                                   ProtocolBinding.GET );
         if (null == endpoint) {
-        	if(DGIWGWMS.DOCTYPE.equals("exception"))
+        	if(DGIWGWMS.DOCTYPE.equals("exception") || DGIWGWMS.DOCTYPE.equals("ogcexception"))
         	{
         		endpoint = URI.create(testContext.getSuite().getParameter(TestRunArg.WMS.toString()));
         	}else {

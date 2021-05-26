@@ -43,6 +43,17 @@ public final class WmsAssertion {
     public static void assertSimpleException( Document doc ) {
         assertQualifiedName( doc.getDocumentElement(), new QName( WmsNamespaces.EXCEPTION, DGIWGWMS.EXCEPTION_REPORT ) );
     }
+    
+    /**
+     * Asserts that the given DOM document has the expected root element 'ows:ExceptionReport' in namespace
+     * {http://www.opengis.net/ogc}.
+     * @param doc
+     * A Document node having {http://www.opengis.net/ogc} {@value DGIWGWMS#OGC_EXCEPTION} as the root
+     *            element.
+     */
+    public static void assertSimpleOGCException( Document doc ) {
+        assertQualifiedName( doc.getDocumentElement(), new QName( WmsNamespaces.OGC, DGIWGWMS.OGC_EXCEPTION ) );
+    }
 
     
     

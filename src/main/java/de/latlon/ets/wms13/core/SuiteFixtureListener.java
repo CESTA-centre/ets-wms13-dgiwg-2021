@@ -76,9 +76,11 @@ public class SuiteFixtureListener implements ISuiteListener {
             
             if( DGIWGWMS.WMS_CAPABILITIES.equals( doc.getDocumentElement().getLocalName()) ){
             	DGIWGWMS.DOCTYPE = "wms";
-            }else if ("ows:ExceptionReport".equals( doc.getDocumentElement().getNodeName() )){
+            }else if (( doc.getDocumentElement().getNodeName() ).toLowerCase().contains("serviceexceptionreport")){
+            	DGIWGWMS.DOCTYPE = "ogcexception";
+            }else if (( doc.getDocumentElement().getNodeName() ).toLowerCase().contains("exceptionreport")){
             	DGIWGWMS.DOCTYPE = "exception";
-            }else {            	
+            }else{            	
                 throw new RuntimeException( "Did not receive WMS capabilities document: "
                                             + doc.getDocumentElement().getNodeName() );
             }

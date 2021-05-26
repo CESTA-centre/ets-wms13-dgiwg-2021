@@ -1,7 +1,8 @@
 package de.latlon.ets.wms13.core.dgiwg.testsuite;
 
 import static de.latlon.ets.core.assertion.ETSAssert.assertQualifiedName;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.fail;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,11 +17,8 @@ import javax.xml.xpath.XPathFactory;
 
 import org.testng.ITestContext;
 import org.testng.SkipException;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -28,7 +26,6 @@ import de.latlon.ets.core.util.TestSuiteLogger;
 import de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.AbstractBaseGetCapabilitiesFixture;
 import de.latlon.ets.wms13.core.domain.DGIWGWMS;
 import de.latlon.ets.wms13.core.domain.WmsNamespaces;
-import de.latlon.ets.wms13.core.assertion.WmsAssertion;
 
 public class DuplicatedParametersException extends AbstractBaseGetCapabilitiesFixture{
 
@@ -36,7 +33,7 @@ public class DuplicatedParametersException extends AbstractBaseGetCapabilitiesFi
 	@DataProvider(name = "codeName")
     public Object[][] parseExceptionCodeName(ITestContext testContext) throws IOException{
 		String actualCode = null;
-		
+		actualCode = getExceptionCode();
 		
 		Object[][] checkCode = new Object[][]{ {actualCode} };
         System.out.println("!!! Values = " + actualCode);
@@ -46,34 +43,36 @@ public class DuplicatedParametersException extends AbstractBaseGetCapabilitiesFi
 	
 	@Test(description = "DGIWG - Web Map Service 1.3 Profile, Requirement 24")
     public void schemaIsWellUsed() {
-		//TODO : est-ce bien ce schéma qu'on veut vérifier ?
+		//Checks if doc follows the good schema when there is a duplicated parameter in the request.
 		boolean flag = true;
-		if(!wmsCapabilities.getDocumentElement().equals(new QName(WmsNamespaces.WMS, DGIWGWMS.WMS_CAPABILITIES))) {
+		String docTag = wmsCapabilities.getDocumentElement().getTagName().toLowerCase();
+		if(!(docTag.contains("exception"))){
 			flag = false;
 		}
-		
 		if(flag)
 			assertQualifiedName( wmsCapabilities.getDocumentElement(), new QName( WmsNamespaces.OGC, DGIWGWMS.OGC_EXCEPTION) );
 		else
-			throw new SkipException("Skipping DuplicatedParameterInRequest because not an exception.");
+			throw new SkipException("Skipping DuplicatedParameterInRequest because not an exception : " + docTag + " document.");
 
     }
 	
 	@Test(description = "DGIWG - Web Map Service 1.3 Profile, Requirement 24", dataProvider = "codeName", dependsOnMethods="schemaIsWellUsed")
     public void exceptionCodeIsValid(String actual) {
-	    	assertTrue(actual.contains("DuplicatedParameterInRequest"), "Invalid exception code value ");
+		if(actual != null)
+		{
+			assertEquals(actual, "DuplicatedParameterInRequest", "Invalid exception code value ");
+		}else {
+			fail("No exception code found.");
+		}
     }
-	
-	
-	
+
 	/**
 	   * Gets exception code if there is no match between requested languages and supported ones by the server.
 	   * @return code.get(0) nc
    */
 	public String getExceptionCode() {
-		List<String> code = new ArrayList<>();
-		
-      String expr = "/ogc:ServiceExceptionReport/ogc:ServiceException/@code";
+	  List<String> code = new ArrayList<>();
+      String expr = "ogc:ServiceExceptionReport/ogc:ServiceException/@code";
       String xPathExpr = String.format(expr);
 
 		try {
