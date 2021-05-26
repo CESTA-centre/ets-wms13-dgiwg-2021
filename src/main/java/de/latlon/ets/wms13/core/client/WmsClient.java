@@ -129,9 +129,7 @@ public class WmsClient {
             }
         } catch ( UniformInterfaceException | ClientHandlerException ex ) {
             LOGR.log( Level.SEVERE, "Failed to process SOAP request/response: " + resource.getURI(), ex );
-        }
-        System.out.println("!!!"+response.getLanguage());
-        
+        }       
         return response;
     }
 
