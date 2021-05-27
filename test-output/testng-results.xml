@@ -1,32 +1,1570 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="76" failed="3" total="79" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1007" started-at="2021-05-20T14:00:44Z" finished-at="2021-05-20T14:00:45Z">
+  <suite name="Default suite" duration-ms="8223" started-at="2021-05-27T07:40:49Z" finished-at="2021-05-27T07:40:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1007" started-at="2021-05-20T14:00:44Z" finished-at="2021-05-20T14:00:45Z">
-      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest">
-        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@8dbdac1]" name="initBaseFixture" is-config="true" duration-ms="652" started-at="2021-05-20T16:00:44Z" finished-at="2021-05-20T16:00:45Z">
+    <test name="Default test" duration-ms="8223" started-at="2021-05-27T07:40:49Z" finished-at="2021-05-27T07:40:57Z">
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest@2cd76f31]" name="initBaseFixture" is-config="true" duration-ms="79" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3cce5371]]>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBaseFixture -->
-        <test-method status="PASS" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@8dbdac1]" name="initParser" is-config="true" duration-ms="293" started-at="2021-05-20T16:00:45Z" finished-at="2021-05-20T16:00:45Z">
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest@2cd76f31]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initParser -->
-        <test-method status="PASS" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@8dbdac1]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="3" started-at="2021-05-20T16:00:45Z" finished-at="2021-05-20T16:00:45Z">
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest@2cd76f31]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buildGetCapabilitiesRequest -->
-        <test-method status="SKIP" signature="wmsCapabilitiesFormatIsAccepted(java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@8dbdac1]" name="wmsCapabilitiesFormatIsAccepted" duration-ms="0" started-at="2021-05-20T16:00:45Z" description="DGIWG - Web Map Service 1.3 Profile, Requirement 22" data-provider="acceptLanguage" finished-at="2021-05-20T16:00:45Z">
+        <test-method status="SKIP" signature="wmsCapabilitiesContainsKeywordFromDFDDRegister()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest@2cd76f31]" name="wmsCapabilitiesContainsKeywordFromDFDDRegister" duration-ms="1" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 12" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesContainsKeywordFromDFDDRegister -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest@2cd76f31]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest@2cd76f31]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest@3cd3e762]" name="initBaseFixture" is-config="true" duration-ms="124" started-at="2021-05-27T09:40:49Z" finished-at="2021-05-27T09:40:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="PASS" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest@3cd3e762]" name="initParser" is-config="true" duration-ms="167" started-at="2021-05-27T09:40:49Z" finished-at="2021-05-27T09:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="PASS" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest@3cd3e762]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="2" started-at="2021-05-27T09:40:50Z" finished-at="2021-05-27T09:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="FAIL" signature="wmsCapabilitiesAbstractContainsProfile()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest@3cd3e762]" name="wmsCapabilitiesAbstractContainsProfile" duration-ms="154" started-at="2021-05-27T09:40:50Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 11" finished-at="2021-05-27T09:40:50Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[URI parameter is null]]>
+            </message>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+          <attributes>
+            <attribute name="request">
+              <![CDATA[request=GetCapabilities&service=WMS&version=1.3.0]]>
+            </attribute> <!-- request -->
+          </attributes>
+        </test-method> <!-- wmsCapabilitiesAbstractContainsProfile -->
+        <test-method status="PASS" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest@3cd3e762]" name="addAttributesOnTestFailure" is-config="true" duration-ms="1" started-at="2021-05-27T09:40:50Z" finished-at="2021-05-27T09:40:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wmsCapabilitiesAbstractContainsProfile status=FAILURE method=GetCapabilitiesAbstractTest.wmsCapabilitiesAbstractContainsProfile()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest@3cd3e762] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="PASS" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest@3cd3e762]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:50Z" finished-at="2021-05-27T09:40:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wmsCapabilitiesAbstractContainsProfile status=FAILURE method=GetCapabilitiesAbstractTest.wmsCapabilitiesAbstractContainsProfile()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest@3cd3e762] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerStyleTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerStyleTest@367ffa75]" name="initBaseFixture" is-config="true" duration-ms="166" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerStyleTest@367ffa75]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerStyleTest@367ffa75]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerStyleExists(org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerStyleTest@367ffa75]" name="wmsCapabilitiesLayerStyleExists" duration-ms="0" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 14" data-provider="layerNodes" finished-at="2021-05-27T09:40:54Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerStyleExists -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerStyleTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest@49438269]" name="initBaseFixture" is-config="true" duration-ms="97" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest@49438269]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest@49438269]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesAccessConstraintsExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest@49438269]" name="wmsCapabilitiesAccessConstraintsExists" duration-ms="1" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 10" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesAccessConstraintsExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest@49438269]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest@49438269]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesAccessConstraintsContainsValueFromDMF()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest@49438269]" name="wmsCapabilitiesAccessConstraintsContainsValueFromDMF" duration-ms="0" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 10" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest.wmsCapabilitiesAccessConstraintsExists" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetCapabilitiesAccessConstraintTest.wmsCapabilitiesAccessConstraintsContainsValueFromDMF()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest@49438269] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesAccessConstraintsContainsValueFromDMF -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.QueryableWMS">
+        <test-method status="PASS" signature="initTestFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.QueryableWMS@3b0090a4]" name="initTestFixture" is-config="true" duration-ms="590" started-at="2021-05-27T09:40:49Z" finished-at="2021-05-27T09:40:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestFixture -->
+        <test-method status="PASS" signature="discoverBaseControllerEndpoint(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.QueryableWMS@3b0090a4]" name="discoverBaseControllerEndpoint" is-config="true" duration-ms="914" started-at="2021-05-27T09:40:50Z" finished-at="2021-05-27T09:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- discoverBaseControllerEndpoint -->
+        <test-method status="FAIL" signature="invokeBaseTestSuite()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.QueryableWMS@3b0090a4]" name="invokeBaseTestSuite" duration-ms="168" started-at="2021-05-27T09:40:51Z" description="See DGIWG-112: Table 1, Requirement 1" finished-at="2021-05-27T09:40:51Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unexpected status code. expected [200] but found [404]]]>
+            </message>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBaseTestSuite -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.QueryableWMS -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesDataUrlTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesDataUrlTest@ba2f4ec]" name="initBaseFixture" is-config="true" duration-ms="85" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesDataUrlTest@ba2f4ec]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesDataUrlTest@ba2f4ec]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesDataUrlIsResolvable(java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesDataUrlTest@ba2f4ec]" name="wmsCapabilitiesDataUrlIsResolvable" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.17, Requirement 21" data-provider="dataUrls" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesDataUrlIsResolvable -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesDataUrlTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoExceptionInEnglishLanguageTest">
+        <test-method status="SKIP" signature="getFeatureInfoExceptionInEnglishLanguage(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoExceptionInEnglishLanguageTest@1fa121e2]" name="getFeatureInfoExceptionInEnglishLanguage" duration-ms="3" started-at="2021-05-27T09:40:51Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.5.2., S.12, Requirement 7" finished-at="2021-05-27T09:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Missing testresult!]]>
+            </message>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFeatureInfoExceptionInEnglishLanguage -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoExceptionInEnglishLanguageTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="initBaseFixture" is-config="true" duration-ms="59" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatGetCapabilitiesTextHtmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="wmsCapabilitiesOutputFormatGetCapabilitiesTextHtmlSupported" duration-ms="1" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatGetCapabilitiesTextHtmlSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatGetCapabilitiesTextXmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="wmsCapabilitiesOutputFormatGetCapabilitiesTextXmlSupported" duration-ms="1" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatGetCapabilitiesTextXmlSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatGetFeatureInfoTextHtmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="wmsCapabilitiesOutputFormatGetFeatureInfoTextHtmlSupported" duration-ms="3" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatGetFeatureInfoTextHtmlSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatGetFeatureInfoTextXmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="wmsCapabilitiesOutputFormatGetFeatureInfoTextXmlSupported" duration-ms="1" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatGetFeatureInfoTextXmlSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatGetMapImageGifSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="wmsCapabilitiesOutputFormatGetMapImageGifSupported" duration-ms="1" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatGetMapImageGifSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatGetMapImageJpegSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="wmsCapabilitiesOutputFormatGetMapImageJpegSupported" duration-ms="2" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatGetMapImageJpegSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatGetMapImagePngSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="wmsCapabilitiesOutputFormatGetMapImagePngSupported" duration-ms="4" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatGetMapImagePngSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest@1c1bbc4e]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.ConfiguredOutputFormatTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest@55fe41ea]" name="initBaseFixture" is-config="true" duration-ms="112" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest@55fe41ea]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest@55fe41ea]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="setResultDirectory(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest@55fe41ea]" name="setResultDirectory" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultDirectory -->
+        <test-method status="SKIP" signature="wmsGetMapLayerCrs_Conditional_Supported(de.latlon.ets.wms13.core.domain.LayerInfo)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest@55fe41ea]" name="wmsGetMapLayerCrs_Conditional_Supported" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6" data-provider="layerNodes" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapLayerCrs_Conditional_Supported -->
+        <test-method status="SKIP" signature="wmsGetMapLayerCrs_Mandatory_CRS_84_Supported(de.latlon.ets.wms13.core.domain.LayerInfo)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest@55fe41ea]" name="wmsGetMapLayerCrs_Mandatory_CRS_84_Supported" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6" data-provider="layerNodes" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapLayerCrs_Mandatory_CRS_84_Supported -->
+        <test-method status="SKIP" signature="wmsGetMapLayerCrs_Mandatory_EPSG_3395_Supported(de.latlon.ets.wms13.core.domain.LayerInfo)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest@55fe41ea]" name="wmsGetMapLayerCrs_Mandatory_EPSG_3395_Supported" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6" data-provider="layerNodes" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapLayerCrs_Mandatory_EPSG_3395_Supported -->
+        <test-method status="SKIP" signature="wmsGetMapLayerCrs_Mandatory_EPSG_4326_Supported(de.latlon.ets.wms13.core.domain.LayerInfo)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest@55fe41ea]" name="wmsGetMapLayerCrs_Mandatory_EPSG_4326_Supported" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6" data-provider="layerNodes" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapLayerCrs_Mandatory_EPSG_4326_Supported -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapLayerCrsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@fbd1f6]" name="initBaseFixture" is-config="true" duration-ms="82" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@fbd1f6]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@fbd1f6]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLanguageIsAccepted(java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest@fbd1f6]" name="wmsCapabilitiesLanguageIsAccepted" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, Requirement 22" data-provider="acceptLanguage" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLanguageIsAccepted -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.interactive.GetMapExceptionInEnglishLanguageTest">
+        <test-method status="SKIP" signature="getMapExceptionInEnglishLanguage(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.interactive.GetMapExceptionInEnglishLanguageTest@7eac9008]" name="getMapExceptionInEnglishLanguage" duration-ms="3" started-at="2021-05-27T09:40:51Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.5.2., S.12, Requirement 7" finished-at="2021-05-27T09:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Missing testresult!]]>
+            </message>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMapExceptionInEnglishLanguage -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.interactive.GetMapExceptionInEnglishLanguageTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest@4116aac9]" name="initBaseFixture" is-config="true" duration-ms="130" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="PASS" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest@4116aac9]" name="initParser" is-config="true" duration-ms="2" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="FAIL" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest@4116aac9]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <exception class="java.lang.NullPointerException">
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="setResultDirectory(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest@4116aac9]" name="setResultDirectory" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultDirectory -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest@4116aac9]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapInImageExceptionsSupported(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest@4116aac9]" name="wmsGetMapInImageExceptionsSupported" duration-ms="2" started-at="2021-05-27T09:40:51Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 25" finished-at="2021-05-27T09:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapInImageExceptionsSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest@4116aac9]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest@4116aac9]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapInImageExceptionsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest@1ce24091]" name="initBaseFixture" is-config="true" duration-ms="82" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest@1ce24091]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest@1ce24091]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:55Z" finished-at="2021-05-27T09:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerCrs_Conditional_Supported(org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest@1ce24091]" name="wmsCapabilitiesLayerCrs_Conditional_Supported" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6" data-provider="layerNodes" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerCrs_Conditional_Supported -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerCrs_Mandatory_CRS_84_Supported(org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest@1ce24091]" name="wmsCapabilitiesLayerCrs_Mandatory_CRS_84_Supported" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6" data-provider="layerNodes" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerCrs_Mandatory_CRS_84_Supported -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerCrs_Mandatory_EPSG_3395_Supported(org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest@1ce24091]" name="wmsCapabilitiesLayerCrs_Mandatory_EPSG_3395_Supported" duration-ms="0" started-at="2021-05-27T09:40:55Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6" data-provider="layerNodes" finished-at="2021-05-27T09:40:55Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerCrs_Mandatory_EPSG_3395_Supported -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerCrs_Mandatory_EPSG_4326_Supported(org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest@1ce24091]" name="wmsCapabilitiesLayerCrs_Mandatory_EPSG_4326_Supported" duration-ms="0" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6" data-provider="layerNodes" finished-at="2021-05-27T09:40:56Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerCrs_Mandatory_EPSG_4326_Supported -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerCrsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="initBaseFixture" is-config="true" duration-ms="118" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="setResultDirectory(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="setResultDirectory" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultDirectory -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatImageGifSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="wmsCapabilitiesOutputFormatImageGifSupported" duration-ms="2" started-at="2021-05-27T09:40:51Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatImageGifSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatImageJpegSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="wmsCapabilitiesOutputFormatImageJpegSupported" duration-ms="2" started-at="2021-05-27T09:40:51Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatImageJpegSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatImagePngSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="wmsCapabilitiesOutputFormatImagePngSupported" duration-ms="2" started-at="2021-05-27T09:40:51Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatImagePngSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsGetMapOutputFormatImageGifSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="wmsGetMapOutputFormatImageGifSupported" duration-ms="0" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest.wmsCapabilitiesOutputFormatImageGifSupported" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetMapOutputFormatTest.wmsGetMapOutputFormatImageGifSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapOutputFormatImageGifSupported -->
+        <test-method status="SKIP" signature="wmsGetMapOutputFormatImageJpegSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="wmsGetMapOutputFormatImageJpegSupported" duration-ms="1" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest.wmsCapabilitiesOutputFormatImageJpegSupported" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetMapOutputFormatTest.wmsGetMapOutputFormatImageJpegSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapOutputFormatImageJpegSupported -->
+        <test-method status="SKIP" signature="wmsGetMapOutputFormatImagePngSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6]" name="wmsGetMapOutputFormatImagePngSupported" duration-ms="0" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest.wmsCapabilitiesOutputFormatImagePngSupported" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetMapOutputFormatTest.wmsGetMapOutputFormatImagePngSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest@74e52ef6] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapOutputFormatImagePngSupported -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapOutputFormatTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoInfoFormatTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoInfoFormatTest@62ddbd7e]" name="initBaseFixture" is-config="true" duration-ms="121" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoInfoFormatTest@62ddbd7e]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoInfoFormatTest@62ddbd7e]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoInfoFormatTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoUomTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoUomTest@15de0b3c]" name="initBaseFixture" is-config="true" duration-ms="219" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoUomTest@15de0b3c]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:51Z" finished-at="2021-05-27T09:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoUomTest@15de0b3c]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="wmsGetFeatureInfoInfoUnitOfMeasureOfDimensionalData(de.latlon.ets.wms13.core.domain.LayerInfo)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoUomTest@15de0b3c]" name="wmsGetFeatureInfoInfoUnitOfMeasureOfDimensionalData" duration-ms="0" started-at="2021-05-27T09:40:52Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.6, S.22, Requirement 32" data-provider="layerInfoWithDimension" finished-at="2021-05-27T09:40:52Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetFeatureInfoInfoUnitOfMeasureOfDimensionalData -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoUomTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="initBaseFixture" is-config="true" duration-ms="54" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="wmsGetFeatureInfoExceptionsWithValueOfHtml()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="wmsGetFeatureInfoExceptionsWithValueOfHtml" duration-ms="1" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.5.8, S.22, Requirement 30" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetFeatureInfoExceptionsWithValueOfHtml -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsGetFeatureInfoExceptionsWithValueOfXml()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="wmsGetFeatureInfoExceptionsWithValueOfXml" duration-ms="1" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.5.8, S.22, Requirement 30" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetFeatureInfoExceptionsWithValueOfXml -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest@7a8c8dcf]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoExceptionsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesFeatureListUrlTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesFeatureListUrlTest@5dda768f]" name="initBaseFixture" is-config="true" duration-ms="170" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesFeatureListUrlTest@5dda768f]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesFeatureListUrlTest@5dda768f]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesFeatureListUrlIsResolvable(java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesFeatureListUrlTest@5dda768f]" name="wmsCapabilitiesFeatureListUrlIsResolvable" duration-ms="0" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.17, Requirement 20" data-provider="featureListUrls" finished-at="2021-05-27T09:40:56Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesFeatureListUrlIsResolvable -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesFeatureListUrlTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerAttributesTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerAttributesTest@489115ef]" name="initBaseFixture" is-config="true" duration-ms="137" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerAttributesTest@489115ef]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerAttributesTest@489115ef]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerAttributesExists(org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerAttributesTest@489115ef]" name="wmsCapabilitiesLayerAttributesExists" duration-ms="0" started-at="2021-05-27T09:40:52Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.17, Requirement 22" data-provider="layerNodes" finished-at="2021-05-27T09:40:52Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerAttributesExists -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerAttributesTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerScaleDenominatorsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerScaleDenominatorsTest@3857f613]" name="initBaseFixture" is-config="true" duration-ms="78" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerScaleDenominatorsTest@3857f613]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerScaleDenominatorsTest@3857f613]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerScaleDenominatorsExists(org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerScaleDenominatorsTest@3857f613]" name="wmsCapabilitiesLayerScaleDenominatorsExists" duration-ms="0" started-at="2021-05-27T09:40:52Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 18" data-provider="layerNodes" finished-at="2021-05-27T09:40:52Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerScaleDenominatorsExists -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLayerScaleDenominatorsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.interactive.GetCapabilitiesInEnglishLanguageTest">
+        <test-method status="SKIP" signature="wmsCapabilitiesInEnglishLanguage(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.interactive.GetCapabilitiesInEnglishLanguageTest@24269709]" name="wmsCapabilitiesInEnglishLanguage" duration-ms="1" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 4" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Missing testresult!]]>
+            </message>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesInEnglishLanguage -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.interactive.GetCapabilitiesInEnglishLanguageTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMinMaxScaleDenominatorsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMinMaxScaleDenominatorsTest@2aceadd4]" name="initBaseFixture" is-config="true" duration-ms="107" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMinMaxScaleDenominatorsTest@2aceadd4]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMinMaxScaleDenominatorsTest@2aceadd4]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerHasCorrectValuesForMinAndMaxDenominator(java.lang.Double, java.lang.Double)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMinMaxScaleDenominatorsTest@2aceadd4]" name="wmsCapabilitiesLayerHasCorrectValuesForMinAndMaxDenominator" duration-ms="0" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 19" data-provider="scaleDenominators" finished-at="2021-05-27T09:40:56Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerHasCorrectValuesForMinAndMaxDenominator -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMinMaxScaleDenominatorsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="initBaseFixture" is-config="true" duration-ms="88" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="setResultDirectory(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="setResultDirectory" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultDirectory -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapTransparencySupported_False(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="wmsGetMapTransparencySupported_False" duration-ms="1" started-at="2021-05-27T09:40:52Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 24" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapTransparencySupported_False -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapTransparencySupported_True(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="wmsGetMapTransparencySupported_True" duration-ms="3" started-at="2021-05-27T09:40:52Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 24" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapTransparencySupported_True -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest@198b6731]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapTransparencyTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="initBaseFixture" is-config="true" duration-ms="81" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="setResultDirectory(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="setResultDirectory" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultDirectory -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapBlankExceptionsSupported_TransparentFalse(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="wmsGetMapBlankExceptionsSupported_TransparentFalse" duration-ms="1" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 26" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapBlankExceptionsSupported_TransparentFalse -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapBlankExceptionsSupported_TransparentTrue(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="wmsGetMapBlankExceptionsSupported_TransparentTrue" duration-ms="1" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 26" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapBlankExceptionsSupported_TransparentTrue -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest@24aed80c]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapBlankExceptionsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="initBaseFixture" is-config="true" duration-ms="94" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="setResultDirectory(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="setResultDirectory" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultDirectory -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapMultiDimensionalDataSupported_Elevation(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="wmsGetMapMultiDimensionalDataSupported_Elevation" duration-ms="1" started-at="2021-05-27T09:40:52Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.20, Requirement 27" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapMultiDimensionalDataSupported_Elevation -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapMultiDimensionalDataSupported_Time(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="wmsGetMapMultiDimensionalDataSupported_Time" duration-ms="2" started-at="2021-05-27T09:40:52Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.20, Requirement 27" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapMultiDimensionalDataSupported_Time -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest@3c9754d8]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapMultiDimensionalDataTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoInEnglishLanguageTest">
+        <test-method status="SKIP" signature="featureInfoResponseInEnglishLanguage(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoInEnglishLanguageTest@7c6908d7]" name="featureInfoResponseInEnglishLanguage" duration-ms="2" started-at="2021-05-27T09:40:52Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 4" finished-at="2021-05-27T09:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Missing testresult!]]>
+            </message>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- featureInfoResponseInEnglishLanguage -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoInEnglishLanguageTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest@3bf7ca37]" name="initBaseFixture" is-config="true" duration-ms="137" started-at="2021-05-27T09:40:52Z" finished-at="2021-05-27T09:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest@3bf7ca37]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest@3bf7ca37]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="setResultDirectory(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest@3bf7ca37]" name="setResultDirectory" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultDirectory -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest@3bf7ca37]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapRequestParametersSupported(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest@3bf7ca37]" name="wmsGetMapRequestParametersSupported" duration-ms="1" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 23" finished-at="2021-05-27T09:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapRequestParametersSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest@3bf7ca37]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest@3bf7ca37]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapRequestParametersTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendFormatTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendFormatTest@79079097]" name="initBaseFixture" is-config="true" duration-ms="136" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendFormatTest@79079097]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendFormatTest@79079097]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayersLegendExitsInCorrectFormat(org.testng.ITestContext, org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendFormatTest@79079097]" name="wmsCapabilitiesLayersLegendExitsInCorrectFormat" duration-ms="0" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 16" data-provider="layerNodes" finished-at="2021-05-27T09:40:53Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayersLegendExitsInCorrectFormat -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendFormatTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="initBaseFixture" is-config="true" duration-ms="262" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesAbstractExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesAbstractExists" duration-ms="2" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesAbstractExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesAccessConstraintsExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesAccessConstraintsExists" duration-ms="2" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesAccessConstraintsExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesContactInformationExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesContactInformationExists" duration-ms="1" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesContactInformationExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesFeesExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesFeesExists" duration-ms="12" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesFeesExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesKeywordListExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesKeywordListExists" duration-ms="3" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesKeywordListExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayerLimitExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesLayerLimitExists" duration-ms="1" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayerLimitExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesNameExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesNameExists" duration-ms="80" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesNameExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOnlineResourceExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesOnlineResourceExists" duration-ms="4" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOnlineResourceExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesTitleExists()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="wmsCapabilitiesTitleExists" duration-ms="4" started-at="2021-05-27T09:40:53Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesTitleExists -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest@4d1c00d0]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="initBaseFixture" is-config="true" duration-ms="220" started-at="2021-05-27T09:40:53Z" finished-at="2021-05-27T09:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatHtmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="wmsCapabilitiesOutputFormatHtmlSupported" duration-ms="1" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatHtmlSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatXmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="wmsCapabilitiesOutputFormatXmlSupported" duration-ms="1" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatXmlSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsGetCapabilitiesOutputFormatHtmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="wmsGetCapabilitiesOutputFormatHtmlSupported" duration-ms="0" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest.wmsCapabilitiesOutputFormatHtmlSupported" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetCapabilitiesOutputFormatTest.wmsGetCapabilitiesOutputFormatHtmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetCapabilitiesOutputFormatHtmlSupported -->
+        <test-method status="SKIP" signature="wmsGetCapabilitiesOutputFormatXmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f]" name="wmsGetCapabilitiesOutputFormatXmlSupported" duration-ms="0" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest.wmsCapabilitiesOutputFormatXmlSupported" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetCapabilitiesOutputFormatTest.wmsGetCapabilitiesOutputFormatXmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest@4b2bac3f] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetCapabilitiesOutputFormatXmlSupported -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesOutputFormatTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest@3a52dba3]" name="initBaseFixture" is-config="true" duration-ms="91" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest@3a52dba3]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest@3a52dba3]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesStylesHasNameAndTitle(org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest@3a52dba3]" name="wmsCapabilitiesStylesHasNameAndTitle" duration-ms="0" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 13" data-provider="styleNodes" finished-at="2021-05-27T09:40:56Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesStylesHasNameAndTitle -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesStyleTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="initBaseFixture" is-config="true" duration-ms="58" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatTextHtmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="wmsCapabilitiesOutputFormatTextHtmlSupported" duration-ms="1" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatTextHtmlSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatTextXmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="wmsCapabilitiesOutputFormatTextXmlSupported" duration-ms="4" started-at="2021-05-27T09:40:56Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatTextXmlSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsGetFeatureInfoOutputFormatTextHtmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="wmsGetFeatureInfoOutputFormatTextHtmlSupported" duration-ms="0" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest.wmsCapabilitiesOutputFormatTextHtmlSupported" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetFeatureInfoOutputFormatTest.wmsGetFeatureInfoOutputFormatTextHtmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetFeatureInfoOutputFormatTextHtmlSupported -->
+        <test-method status="SKIP" signature="wmsGetFeatureInfoOutputFormatTextXmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f]" name="wmsGetFeatureInfoOutputFormatTextXmlSupported" duration-ms="0" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 3" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest.wmsCapabilitiesOutputFormatTextXmlSupported" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GetFeatureInfoOutputFormatTest.wmsGetFeatureInfoOutputFormatTextXmlSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest@2a5c8d3f] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetFeatureInfoOutputFormatTextXmlSupported -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoOutputFormatTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest@b3ca52e]" name="initBaseFixture" is-config="true" duration-ms="74" started-at="2021-05-27T09:40:56Z" finished-at="2021-05-27T09:40:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest@b3ca52e]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest@b3ca52e]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesLayersLegendUrlIsAccessible(org.testng.ITestContext, org.w3c.dom.Node, java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest@b3ca52e]" name="wmsCapabilitiesLayersLegendUrlIsAccessible" duration-ms="0" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 17" data-provider="layerNodes" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: Unable to evaluate expression using this context]]>
+            </message>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesLayersLegendUrlIsAccessible -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesLegendUrlTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptFormatsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptFormatsTest@4e08711f]" name="initBaseFixture" is-config="true" duration-ms="184" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptFormatsTest@4e08711f]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptFormatsTest@4e08711f]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesFormatIsAccepted(java.lang.String, java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptFormatsTest@4e08711f]" name="wmsCapabilitiesFormatIsAccepted" duration-ms="0" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, Requirement 22" data-provider="acceptFormats" finished-at="2021-05-27T09:40:54Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NullPointerException]]>
@@ -35,7 +1573,248 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wmsCapabilitiesFormatIsAccepted -->
-      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptLanguagesTest -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAcceptFormatsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException@45c7e403]" name="initBaseFixture" is-config="true" duration-ms="92" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException@45c7e403]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException@45c7e403]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="schemaIsWellUsed()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException@45c7e403]" name="schemaIsWellUsed" duration-ms="1" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, Requirement 24" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaIsWellUsed -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException@45c7e403]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException@45c7e403]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method name="exceptionCodeIsValid" signature="exceptionCodeIsValid(java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException@45c7e403]" status="SKIP" duration-ms="0" finished-at="2021-05-27T09:40:57Z" started-at="2021-05-27T09:40:57Z" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException.schemaIsWellUsed" data-provider="codeName" description="DGIWG - Web Map Service 1.3 Profile, Requirement 24">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DuplicatedParametersException.exceptionCodeIsValid(java.lang.String)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException@45c7e403] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exceptionCodeIsValid -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.DuplicatedParametersException -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest@bcec361]" name="initBaseFixture" is-config="true" duration-ms="75" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest@bcec361]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest@bcec361]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="setResultDirectory(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest@bcec361]" name="setResultDirectory" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setResultDirectory -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest@bcec361]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsGetMapDimensionsSupported(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest@bcec361]" name="wmsGetMapDimensionsSupported" duration-ms="1" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.20, Requirement 28" finished-at="2021-05-27T09:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetMapDimensionsSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest@bcec361]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest@bcec361]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.GetMapDimensionsTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="initBaseFixture" is-config="true" duration-ms="73" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetMapRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="buildGetMapRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetMapRequest -->
+        <test-method status="SKIP" signature="wmsGetFeatureInfoFeatureCountWithValueOfOne()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="wmsGetFeatureInfoFeatureCountWithValueOfOne" duration-ms="1" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.5.6, S.22, Requirement 29" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetFeatureInfoFeatureCountWithValueOfOne -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsGetFeatureInfoFeatureCountWithValueOfTen()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="wmsGetFeatureInfoFeatureCountWithValueOfTen" duration-ms="1" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.5.6, S.22, Requirement 29" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsGetFeatureInfoFeatureCountWithValueOfTen -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest@26794848]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.GetFeatureInfoFeatureCountTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites">
+        <test-method status="FAIL" signature="verifyServiceDescription(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites@302552ec]" name="verifyServiceDescription" duration-ms="1" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyServiceDescription -->
+        <test-method status="SKIP" signature="serviceIsAvailable(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites@302552ec]" name="serviceIsAvailable" duration-ms="0" started-at="2021-05-27T09:40:57Z" depends-on-methods="de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites.verifyServiceDescription" finished-at="2021-05-27T09:40:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Prerequisites.serviceIsAvailable(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites@302552ec] depends on not successfully finished methods]]>
+            </message>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serviceIsAvailable -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest@40005471]" name="initBaseFixture" is-config="true" duration-ms="78" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest@40005471]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest@40005471]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="clearRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest@40005471]" name="clearRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesOutputFormatParameterSupported()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest@40005471]" name="wmsCapabilitiesOutputFormatParameterSupported" duration-ms="1" started-at="2021-05-27T09:40:54Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.1., S.12, Requirement 8" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesOutputFormatParameterSupported -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest@40005471]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest@40005471]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:54Z" finished-at="2021-05-27T09:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesRequestParameterTest -->
+      <class name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest">
+        <test-method status="PASS" signature="initBaseFixture(org.testng.ITestContext)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="initBaseFixture" is-config="true" duration-ms="71" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2da59753]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBaseFixture -->
+        <test-method status="SKIP" signature="initParser()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="initParser" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initParser -->
+        <test-method status="SKIP" signature="buildGetCapabilitiesRequest()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="buildGetCapabilitiesRequest" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buildGetCapabilitiesRequest -->
+        <test-method status="SKIP" signature="wmsCapabilitiesMaxHeight()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="wmsCapabilitiesMaxHeight" duration-ms="1" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 15" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesMaxHeight -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+        <test-method status="SKIP" signature="wmsCapabilitiesMaxWidth()[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="wmsCapabilitiesMaxWidth" duration-ms="10" started-at="2021-05-27T09:40:57Z" description="DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 15" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wmsCapabilitiesMaxWidth -->
+        <test-method status="SKIP" signature="addAttributesOnTestFailure(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="addAttributesOnTestFailure" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestFailure -->
+        <test-method status="SKIP" signature="addAttributesOnTestSuccess(org.testng.ITestResult)[pri:0, instance:de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest@710f4dc7]" name="addAttributesOnTestSuccess" is-config="true" duration-ms="0" started-at="2021-05-27T09:40:57Z" finished-at="2021-05-27T09:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAttributesOnTestSuccess -->
+      </class> <!-- de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesMaxExtendTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

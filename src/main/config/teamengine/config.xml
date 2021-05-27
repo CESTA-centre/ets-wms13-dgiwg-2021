@@ -3,18 +3,17 @@
 <organization>
   <name>OGC</name>
   <standard>
-    <name>DGIWG Web Map Service (DGIWG WMS)</name>
+    <name>Harmonized DGIWG Web Map Service (DGIWG WMS) STANAG 6523 Ed.1 revision</name>
     <version>
       <name>${spec-version}</name>
       <suite>
         <namespace-uri>http://www.opengis.net/cite/dgiwg/wms</namespace-uri>
         <prefix>tns</prefix>
         <local-name>ets-${ets-code}-${version}</local-name>
-        <title>DGIWG WMS 1.3 Conformance Test Suite - 2021 </title>
-        <description>Checks DGIWG WMS 1.3 implementations for conformance to DGIWG WMS 1.3 (DGIWG-112).</description>
+        <title>Harmonized DGIWG WMS 1.3 Conformance Test Suite - STANAG 6523 Ed.1 revision </title>
+        <description>Checks Harmonized DGIWG WMS 1.3 implementations for conformance to  Harmonized DGIWG WMS 1.3 (DGIWG-112), STANAG 6523 Ed.1 revision.</description>
         <BasicConformanceClasses>
           <conformanceClass>Preconditions</conformanceClass>
-          <conformanceClass>WMS Basic</conformanceClass>
           <conformanceClass>WMS Queryable</conformanceClass>
           <conformanceClass>DGIWG WMS</conformanceClass>
         </BasicConformanceClasses>

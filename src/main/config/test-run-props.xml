@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
-  <comment>DGIWG WMS reference implementation</comment>
+  <comment>Harmonized DGIWG WMS - STANAG 6523 Ed.1 revision reference implementation</comment>
   <entry key="wms"></entry>
   <entry key="vector">false</entry>
 </properties>

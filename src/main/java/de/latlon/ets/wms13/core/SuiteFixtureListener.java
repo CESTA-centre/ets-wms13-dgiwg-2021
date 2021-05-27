@@ -104,9 +104,8 @@ public class SuiteFixtureListener implements ISuiteListener {
         boolean getFeatureInfoExceptionInEnglishLanguage = parseBoolean( params,
                                                                          TestRunArg.GETFEATUREINFO_EXCEPTION_IN_ENGLISH );
         boolean getMapExceptionInEnglishLanguage = parseBoolean( params, TestRunArg.GETMAP_EXCEPTION_IN_ENGLISH );
-        boolean getTitleInLocaleLanguage = parseBoolean( params, TestRunArg.CAPABILITIES_TITLE_IN_LOCALE);
         return new InteractiveTestResult( capabilitiesInEnglishLanguage, getFeatureInfoInEnglishLanguage,
-                        getFeatureInfoExceptionInEnglishLanguage, getMapExceptionInEnglishLanguage, getTitleInLocaleLanguage);
+                        getFeatureInfoExceptionInEnglishLanguage, getMapExceptionInEnglishLanguage);
     }
 
     private boolean parseBoolean( Map<String, String> params, TestRunArg arg ) {

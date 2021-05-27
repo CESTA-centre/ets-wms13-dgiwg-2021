@@ -1,22 +1,23 @@
 
 # DGIWG – Web Map Service 1.3 Profile Conformance Test Suite
+# STANAG 6523 Ed.1 revision WMS Harmonized profile
 
 ## Scope
 
 This executable test suite (ETS) verifies the conformance of the implementation under 
-test (IUT) with respect to DGIWG – Web Map Service 1.3 Profile, [DGIWG-112](https://portal.dgiwg.org/files/?artifact_id=11514).
+test (IUT) with respect to harmonized DGIWG – Web Map Service 1.3 Profile from STANAG 6523 Ed.1 revision.
 Conformance testing is a kind of "black box" testing that examines the externally 
 visible characteristics or behaviors of the IUT while disregarding any implementation details.
 
 
 ## What is tested
 
-  - All requirements described in "DGIWG – Web Map Service 1.3 Profile".
+  - All requirements described in Harmonized DGIWG – Web Map Service 1.3 Profile, STANAG 6523 Ed.1 revision.
 
 
 ## What is not tested
 
-  - All recommendations described in "DGIWG – Web Map Service 1.3 Profile".
+  - WMS 1.3 Standard. As the DGIWG profile complements the WMS standard, the [WMS 1.3](https://portal.ogc.org/files/?artifact_id=14416) test suite must first be run to check the conformity of the service (can be found on [GitHub](https://github.com/opengeospatial/ets-wms13)).
 
 
 ## Test requirements
@@ -24,7 +25,7 @@ visible characteristics or behaviors of the IUT while disregarding any implement
 The documents listed below stipulate requirements that must be satisfied by a 
 conforming implementation.
 
-1. [DGIWG – Web Map Service 1.3 Profile (09-102r3)](https://portal.opengeospatial.org/files/?artifact_id=66915)
+1. STANAG 6523 Ed.1 revision of [DGIWG 112 – Defence Profile of OGC's Web Map Service 1.3 - Revision (14-013r2)](https://portal.dgiwg.org/files/68226)
 2. [Web Map Server Implementation Specification, Version 1.3.0 (06-042)](http://portal.opengeospatial.org/files/?artifact_id=14416)
 
 If any of the following preconditions are not satisfied then all tests in the 
@@ -52,10 +53,6 @@ The general structure of the test suite is shown in Table 1.
     <tr>
       <td>Preconditions</td>
       <td>de.latlon.ets.wms13.core.dgiwg.testsuite.Prerequisites</td>
-    </tr>
-    <tr>
-      <td>WMS Basic</td>
-      <td>Not tested yet</td>
     </tr>
     <tr>
       <td>Queryable WMS</td>
@@ -141,7 +138,7 @@ have the following values: M (mandatory), O (optional), or C (conditional).
       <td>URI</td>
       <td>M</td>
 	  <td>A URI that refers to the implementation under test or metadata about it.
-      Ampersand ('&amp;') characters must be percent-encoded as '%26'.</td>
+      Ampersand '&amp;' characters must be followed with 'amp;' expression.</td>
     </tr>
 	<tr>
       <td>vector</td>
@@ -153,15 +150,10 @@ have the following values: M (mandatory), O (optional), or C (conditional).
 </table>
 
 
-## Test Lead
+## Credits
+This test suite is an adaptation of [ets-wms13-dgiwg](https://github.com/opengeospatial/ets-wms13-dgiwg).
 
-  - Dirk Stenger (latlon)
 
-
-##  Contributors
-
-  - Dirk Stenger (latlon)
-  - Richard Martell (Galdos)
 
 
 ##  License

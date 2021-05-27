@@ -11,7 +11,7 @@
     <ctl:param name="testRunArgs">A Document node containing test run arguments (as XML properties).</ctl:param>
     <ctl:param name="outputDir">The directory in which the test results will be written.</ctl:param>
     <ctl:return>The test results as a Source object (root node).</ctl:return>
-    <ctl:description>Runs the DGIWG WMS 1.3.0 (${version}) test suite.</ctl:description>
+    <ctl:description>Runs the Harmonized DGIWG WMS 1.3.0 (${version}) STANAG 6523 Ed.1 revision test suite.</ctl:description>
     <ctl:code>
       <xsl:variable name="controller" select="tng:new($outputDir)" />
       <xsl:copy-of select="tng:doTestRun($controller, $testRunArgs)" />
@@ -19,8 +19,8 @@
   </ctl:function>
 
   <ctl:suite name="tns:ets-${ets-code}-${version}">
-    <ctl:title>DGIWG WMS 1.3.0 Conformance Test Suite</ctl:title>
-    <ctl:description>Checks DGIWG WMS 1.3.0 implementations for conformance to DGIWG WMS 1.3.0.</ctl:description>
+    <ctl:title>Harmonized DGIWG WMS 1.3.0 STANAG 6523 Ed.1 revision Conformance Test Suite</ctl:title>
+    <ctl:description>Checks Harmonized DGIWG WMS 1.3.0 implementations for conformance to Harmonized DGIWG WMS 1.3.0.</ctl:description>
     <ctl:starting-test>tns:Main</ctl:starting-test>
   </ctl:suite>
 
@@ -29,7 +29,7 @@
     <ctl:code>
       <xsl:variable name="form-data">
         <ctl:form method="POST" width="800" height="600" xmlns="http://www.w3.org/1999/xhtml">
-          <h2>DGIWG WMS 1.3.0 Conformance Test Suite</h2>
+          <h2>Harmonized DGIWG WMS 1.3.0 STANAG 6523 Ed.1 revision Conformance Test Suite</h2>
           <div style="background:#F0F8FF" bgcolor="#F0F8FF">
             <fieldset style="background:#ccffff">
               <legend
@@ -84,11 +84,6 @@
           <ctl:with-param name="wms.capabilities.url" select="normalize-space($form-data/values/value[@key='wms-uri'])" />
         </ctl:call-function>
       </xsl:variable>
-      <xsl:variable name="getTitleInLocaleLanguage">
-        <ctl:call-function name="interactive:titleInLocaleLanguage">
-          <ctl:with-param name="wms.capabilities.url" select="normalize-space($form-data/values/value[@key='wms-uri'])" />
-        </ctl:call-function>
-      </xsl:variable>
       <xsl:variable name="test-run-props">
         <properties version="1.0">
           <entry key="wms">
@@ -115,9 +110,6 @@
           </entry>
           <entry key="getmap_exception_in_english">
             <xsl:value-of select="$getMapExceptionInEnglishLanguage" />
-          </entry>
-            <entry key="capabilities_title_in_locale">
-            <xsl:value-of select="$getTitleInLocaleLanguage" />
           </entry>
         </properties>
       </xsl:variable>

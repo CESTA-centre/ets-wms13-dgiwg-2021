@@ -214,10 +214,7 @@ public class GetCapabilitiesAcceptLanguagesTest extends AbstractBaseGetCapabilit
 			//getTitleInLocaleLanguage(testContext);
 			ISuite suite = testContext.getSuite();
 			Map<String, String> params = suite.getXmlSuite().getParameters();
-			boolean resp = parseBoolean(params, TestRunArg.CAPABILITIES_TITLE_IN_LOCALE);
-			System.out.println("!!!!! resp = " + resp);
-			if(!resp)
-				actualLanguage = "*";
+			System.out.println("!!!!! resp = ");
 
 		}else {	
 			/*If there is no match between the list of languages in the AcceptLanguages parameter and 

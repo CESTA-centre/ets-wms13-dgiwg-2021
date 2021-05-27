@@ -49,13 +49,8 @@ public enum TestRunArg {
      * <code>true</code> if the interactive test for GetMap response in english
      * language is passed, <code>false</code> otherwise
      */
-    GETMAP_EXCEPTION_IN_ENGLISH,
+    GETMAP_EXCEPTION_IN_ENGLISH;
 	
-	/**
-     * <code>true</code> if the sentence test for GetCapabilities response in locale
-     * language is passed, <code>false</code> otherwise
-     */
-	CAPABILITIES_TITLE_IN_LOCALE;
 
     @Override
     public String toString() {
