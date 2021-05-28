@@ -46,14 +46,28 @@ public class GetCapabilitiesLayerCrsTest extends AbstractBaseGetCapabilitiesFixt
         return layers;
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6", dataProvider = "layerNodes")
+    @Test(groups= {"A  WMS server shall support the following coordinate reference systems, as a minimum: \n"
+    		+ "• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees \n"
+    		+ "• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees \n"
+    		+ "• EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, the service shall support all those which validity zone overlaps data published by the service: \n"
+    		+ "• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 \n"
+    		+ "• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760\n"
+    		+ "• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 \n"
+    		+ "Each WMS service instance does not have to provide its data in all these CRSs. "}, description = "Checks CRS:84", dataProvider = "layerNodes")
     public
                     void wmsCapabilitiesLayerCrs_Mandatory_CRS_84_Supported( Node layerNode, String name, String title )
                                     throws XPathExpressionException, XPathFactoryConfigurationException {
         assertCrs( layerNode, "CRS:84" );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6", dataProvider = "layerNodes")
+    @Test(groups= {"A  WMS server shall support the following coordinate reference systems, as a minimum: \n"
+    		+ "• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees \n"
+    		+ "• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees \n"
+    		+ "• EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, the service shall support all those which validity zone overlaps data published by the service: \n"
+    		+ "• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 \n"
+    		+ "• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760\n"
+    		+ "• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 \n"
+    		+ "Each WMS service instance does not have to provide its data in all these CRSs. "}, description = "Checks EPSG:4326", dataProvider = "layerNodes")
     public
                     void wmsCapabilitiesLayerCrs_Mandatory_EPSG_4326_Supported( Node layerNode, String name,
                                                                                 String title )
@@ -61,7 +75,14 @@ public class GetCapabilitiesLayerCrsTest extends AbstractBaseGetCapabilitiesFixt
         assertCrs( layerNode, "EPSG:4326" );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6", dataProvider = "layerNodes")
+    @Test(groups= {"A  WMS server shall support the following coordinate reference systems, as a minimum: \n"
+    		+ "• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees \n"
+    		+ "• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees \n"
+    		+ "• EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, the service shall support all those which validity zone overlaps data published by the service: \n"
+    		+ "• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 \n"
+    		+ "• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760\n"
+    		+ "• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 \n"
+    		+ "Each WMS service instance does not have to provide its data in all these CRSs. "}, description = "Checks EPSG:3395", dataProvider = "layerNodes")
     public
                     void wmsCapabilitiesLayerCrs_Mandatory_EPSG_3395_Supported( Node layerNode, String name,
                                                                                 String title )
@@ -69,7 +90,14 @@ public class GetCapabilitiesLayerCrsTest extends AbstractBaseGetCapabilitiesFixt
         assertCrs( layerNode, "EPSG:3395" );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6", dataProvider = "layerNodes")
+    @Test(groups= {"A  WMS server shall support the following coordinate reference systems, as a minimum: \n"
+    		+ "• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees \n"
+    		+ "• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees \n"
+    		+ "• EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, the service shall support all those which validity zone overlaps data published by the service: \n"
+    		+ "• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 \n"
+    		+ "• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760\n"
+    		+ "• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 \n"
+    		+ "Each WMS service instance does not have to provide its data in all these CRSs. "}, description = "Checks the support of CRS codes when boundingbox overlap.", dataProvider = "layerNodes")
     public
                     void wmsCapabilitiesLayerCrs_Conditional_Supported( Node layerNode, String name, String title )
                                     throws XPathExpressionException, XPathFactoryConfigurationException {

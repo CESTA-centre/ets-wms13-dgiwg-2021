@@ -38,7 +38,7 @@ public class GetCapabilitiesLayerStyleTest extends AbstractBaseGetCapabilitiesFi
         return layers;
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 14", dataProvider = "layerNodes")
+    @Test(groups= {"A WMS server shall always provide at least one style element and that style shall be advertised even if it's only the default style. "}, description = "Checks if Style exists.", dataProvider = "layerNodes")
     public
                     void wmsCapabilitiesLayerStyleExists( Node layerNode, String name, String title )
                                     throws XPathExpressionException, XPathFactoryConfigurationException {

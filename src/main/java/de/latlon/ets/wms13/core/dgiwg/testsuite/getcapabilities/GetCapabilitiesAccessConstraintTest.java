@@ -32,13 +32,13 @@ public class GetCapabilitiesAccessConstraintTest extends AbstractBaseGetCapabili
     private static final List<String> EXPECTED_ACCESS_CONSTRAINTS = Arrays.asList( "unclassified", "restricted",
                                                                                  "confidential", "secret", "topSecret" );
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 10")
+    @Test(groups= {"A WMS server SHALL use the <AccessContraints>  element to hold the classification information for this web service instance."}, description = "Checks if AccessConstraints is present.")
     public void wmsCapabilitiesAccessConstraintsExists() {
         String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:AccessConstraints != ''";
         assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 10", dependsOnMethods = "wmsCapabilitiesAccessConstraintsExists")
+    @Test(groups= {"A WMS server SHALL use the <AccessContraints>  element to hold the classification information for this web service instance."}, description ="Retrieves values of AccessConstraints and verifies that containes expected values.", dependsOnMethods = "wmsCapabilitiesAccessConstraintsExists")
     public
                     void wmsCapabilitiesAccessConstraintsContainsValueFromDMF()
                                     throws XPathFactoryConfigurationException, XPathExpressionException {

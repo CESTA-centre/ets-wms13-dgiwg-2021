@@ -38,7 +38,7 @@ public class GetCapabilitiesLayerAttributesTest extends AbstractBaseGetCapabilit
         return layers;
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.17, Requirement 22", dataProvider = "layerNodes")
+    @Test(groups="A WMS server shall provide the Layer Attributes with following restrictions on their values : noSubsets (0, false), fixedWidth (0), FixedHeight (0).", description = "Checks if noSubsets, fixedWidth and FixedHeight are present.", dataProvider = "layerNodes")
     public
                     void wmsCapabilitiesLayerAttributesExists( Node layerNode, String name, String title )
                                     throws XPathExpressionException, XPathFactoryConfigurationException {

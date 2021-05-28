@@ -19,7 +19,10 @@ import de.latlon.ets.wms13.core.domain.SuiteAttribute;
  */
 public class GetFeatureInfoInEnglishLanguageTest {
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.3.1., S.9, Requirement 4")
+    @Test(groups= {"DGIWG Requirement 3 : A WMS server shall provide the metadata content \n"
+    		+ "				in response to a \"GetCapabilities\" or “GetFeatureInfo” (if supported) request \n"
+    		+ "				in the English language. Metadata content may also be provided in additional \n"
+    		+ "				languages, but English must always be included."}, description = "Ask user if GetFeatureInfo response is in English.")
     public void featureInfoResponseInEnglishLanguage( ITestContext context )
                     throws XPathExpressionException, XPathFactoryConfigurationException {
         if ( context == null )

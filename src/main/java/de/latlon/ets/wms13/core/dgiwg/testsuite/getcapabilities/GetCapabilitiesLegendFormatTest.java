@@ -43,7 +43,7 @@ public class GetCapabilitiesLegendFormatTest extends AbstractBaseGetCapabilities
         return layers;
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 16", dataProvider = "layerNodes")
+    @Test(groups= {"Legends shall be available as an image in at least one of the following formats: PNG (image/png), GIF (image/gif) or JPEG (image/jpeg)."}, description="Checks legend format.", dataProvider = "layerNodes")
     public
                     void wmsCapabilitiesLayersLegendExitsInCorrectFormat( ITestContext testContext, Node layerNode,
                                                                           String name, String title )

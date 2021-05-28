@@ -19,7 +19,7 @@ import de.latlon.ets.wms13.core.domain.SuiteAttribute;
  */
 public class GetFeatureInfoExceptionInEnglishLanguageTest {
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.5.2., S.12, Requirement 7")
+    @Test(groups= {"A WMS server shall provide the service exceptions in the English language.  Exception text content may also be provided in additional languages, but English must always be included."}, description = "Asks the user if the presented request returns an exception that contains English language.")
     public void getFeatureInfoExceptionInEnglishLanguage( ITestContext context )
                     throws XPathExpressionException, XPathFactoryConfigurationException {
         if ( context == null )
@@ -31,7 +31,7 @@ public class GetFeatureInfoExceptionInEnglishLanguageTest {
         InteractiveTestResult interactiveTestResult = (InteractiveTestResult) attribute;
         boolean getFeatureInfoExceptopmResponseInEnglishLanguage = interactiveTestResult.isGetFeatureInfoExceptionInEnglishLanguage();
         assertTrue( getFeatureInfoExceptopmResponseInEnglishLanguage,
-                    "Content of the GetFeatureInfo exception is not in English language." );
+                    "Content of the GetFeatureInfo exception does not include English language." );
     }
 
 }

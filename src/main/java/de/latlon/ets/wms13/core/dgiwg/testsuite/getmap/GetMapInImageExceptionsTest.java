@@ -41,7 +41,7 @@ public class GetMapInImageExceptionsTest extends BaseGetMapFixture {
         this.reqEntity.removeKvp( EXCEPTIONS_PARAM );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 25")
+    @Test(groups="A WMS server shall support the INIMAGE EXCEPTIONS.", description = "Checks if GetMap request returns correct response.")
     public void wmsGetMapInImageExceptionsSupported( ITestContext testContext )
                     throws SOAPException {
         URI endpoint = ServiceMetadataUtils.getOperationEndpoint( this.wmsCapabilities, GET_MAP, ProtocolBinding.GET );
@@ -54,7 +54,7 @@ public class GetMapInImageExceptionsTest extends BaseGetMapFixture {
 
         ClientResponse rsp = wmsClient.submitRequest( this.reqEntity, endpoint );
 
-        storeResponseImage( rsp, "Requirement25", "inImageExceptionExpected_transparentBackground", requestFormat );
+        storeResponseImage( rsp, "Requirement20", "inImageExceptionExpected_transparentBackground", requestFormat );
 
         assertTrue( rsp.hasEntity(), ErrorMessage.get( ErrorMessageKey.MISSING_XML_ENTITY ) );
         assertStatusCode( rsp.getStatus(), 200 );

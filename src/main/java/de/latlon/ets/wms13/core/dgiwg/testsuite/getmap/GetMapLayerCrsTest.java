@@ -53,7 +53,14 @@ public class GetMapLayerCrsTest extends BaseGetMapFixture {
         return layers;
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6", dataProvider = "layerNodes")
+    @Test(groups= {"A  WMS server shall support the following coordinate reference systems, as a minimum: \n"
+    		+ "• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees \n"
+    		+ "• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees \n"
+    		+ "• EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, the service shall support all those which validity zone overlaps data published by the service: \n"
+    		+ "• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 \n"
+    		+ "• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760\n"
+    		+ "• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 \n"
+    		+ "Each WMS service instance does not have to provide its data in all these CRSs. "}, description = "Cehcks if GetMap response is in CRS84.", dataProvider = "layerNodes")
     public
                     void wmsGetMapLayerCrs_Mandatory_CRS_84_Supported( LayerInfo layer ) {
         String crs = "CRS:84";
@@ -68,14 +75,21 @@ public class GetMapLayerCrsTest extends BaseGetMapFixture {
         URI endpoint = getOperationEndpoint( this.wmsCapabilities, GET_MAP, GET );
         ClientResponse rsp = wmsClient.submitRequest( this.reqEntity, endpoint );
 
-        storeResponseImage( rsp, "Requirement6", "Mandatory_CRS_84_Supported_By_Layer_" + layerName, REQUEST_FORMAT );
+        storeResponseImage( rsp, "Requirement5", "Mandatory_CRS_84_Supported_By_Layer_" + layerName, REQUEST_FORMAT );
 
         assertTrue( rsp.hasEntity(), ErrorMessage.get( ErrorMessageKey.MISSING_XML_ENTITY ) );
         assertStatusCode( rsp.getStatus(), 200 );
         assertContentType( rsp.getHeaders(), REQUEST_FORMAT );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6", dataProvider = "layerNodes")
+    @Test(groups= {"A  WMS server shall support the following coordinate reference systems, as a minimum: \n"
+    		+ "• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees \n"
+    		+ "• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees \n"
+    		+ "• EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, the service shall support all those which validity zone overlaps data published by the service: \n"
+    		+ "• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 \n"
+    		+ "• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760\n"
+    		+ "• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 \n"
+    		+ "Each WMS service instance does not have to provide its data in all these CRSs. "}, description = "Cehcks if GetMap response is in EPSG4326.", dataProvider = "layerNodes")
     public
                     void wmsGetMapLayerCrs_Mandatory_EPSG_4326_Supported( LayerInfo layer ) {
         String crs = "EPSG:4326";
@@ -90,14 +104,21 @@ public class GetMapLayerCrsTest extends BaseGetMapFixture {
         URI endpoint = getOperationEndpoint( this.wmsCapabilities, GET_MAP, GET );
         ClientResponse rsp = wmsClient.submitRequest( this.reqEntity, endpoint );
 
-        storeResponseImage( rsp, "Requirement6", "Mandatory_EPSG_4326_Supported_By_Layer_" + layerName, REQUEST_FORMAT );
+        storeResponseImage( rsp, "Requirement5", "Mandatory_EPSG_4326_Supported_By_Layer_" + layerName, REQUEST_FORMAT );
 
         assertTrue( rsp.hasEntity(), ErrorMessage.get( ErrorMessageKey.MISSING_XML_ENTITY ) );
         assertStatusCode( rsp.getStatus(), 200 );
         assertContentType( rsp.getHeaders(), REQUEST_FORMAT );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6", dataProvider = "layerNodes")
+    @Test(groups= {"A  WMS server shall support the following coordinate reference systems, as a minimum: \n"
+    		+ "• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees \n"
+    		+ "• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees \n"
+    		+ "• EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, the service shall support all those which validity zone overlaps data published by the service: \n"
+    		+ "• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 \n"
+    		+ "• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760\n"
+    		+ "• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 \n"
+    		+ "Each WMS service instance does not have to provide its data in all these CRSs. "}, description = "Cehcks if GetMap response is in EPSG3395.", dataProvider = "layerNodes")
     public
                     void wmsGetMapLayerCrs_Mandatory_EPSG_3395_Supported( LayerInfo layer ) {
         String crs = "EPSG:3395";
@@ -112,14 +133,21 @@ public class GetMapLayerCrsTest extends BaseGetMapFixture {
         URI endpoint = getOperationEndpoint( this.wmsCapabilities, GET_MAP, GET );
         ClientResponse rsp = wmsClient.submitRequest( this.reqEntity, endpoint );
 
-        storeResponseImage( rsp, "Requirement6", "Mandatory_EPSG_3395_Supported_By_Layer_" + layerName, REQUEST_FORMAT );
+        storeResponseImage( rsp, "Requirement5", "Mandatory_EPSG_3395_Supported_By_Layer_" + layerName, REQUEST_FORMAT );
 
         assertTrue( rsp.hasEntity(), ErrorMessage.get( ErrorMessageKey.MISSING_XML_ENTITY ) );
         assertStatusCode( rsp.getStatus(), 200 );
         assertContentType( rsp.getHeaders(), REQUEST_FORMAT );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.4.2., S.11, Requirement 6", dataProvider = "layerNodes")
+    @Test(groups= {"A  WMS server shall support the following coordinate reference systems, as a minimum: \n"
+    		+ "• CRS:84 WGS84 geographic longitude, then latitude, expressed in decimal degrees \n"
+    		+ "• EPSG:4326 WGS84 geographic latitude, then longitude, expressed in decimal degrees \n"
+    		+ "• EPSG:3395 World Mercator projection Among the following Coordinate Reference Systems, the service shall support all those which validity zone overlaps data published by the service: \n"
+    		+ "• UTM projections over WGS84 (north zones)…  EPSG:32601 to EPSG:32660 \n"
+    		+ "• UTM projections over  WGS84 (south zones)…  EPSG:32701 to EPSG:32760\n"
+    		+ "• UPS projection over WGS84 (north zone)…  EPSG: 5041 UPS projection over WGS84 (south zone)…  EPSG: 5042 \n"
+    		+ "Each WMS service instance does not have to provide its data in all these CRSs. "}, description = "Cehcks if GetMap response is in good CRS when overlapping.", dataProvider = "layerNodes")
     public
                     void wmsGetMapLayerCrs_Conditional_Supported( LayerInfo layer ) {
         List<String> conditionalExpectedCrs = CRS_MATCHER.retrieveOverlappingCrs( layer.getGeographicBbox() );
@@ -136,7 +164,7 @@ public class GetMapLayerCrsTest extends BaseGetMapFixture {
             URI endpoint = getOperationEndpoint( this.wmsCapabilities, GET_MAP, GET );
             ClientResponse rsp = wmsClient.submitRequest( this.reqEntity, endpoint );
 
-            storeResponseImage( rsp, "Requirement6", "Conditional_" + crs.replace( ":", "_" ) + "_Supported_By_Layer_"
+            storeResponseImage( rsp, "Requirement5", "Conditional_" + crs.replace( ":", "_" ) + "_Supported_By_Layer_"
                                                      + layerName, REQUEST_FORMAT );
 
             assertTrue( rsp.hasEntity(), ErrorMessage.get( ErrorMessageKey.MISSING_XML_ENTITY ) );

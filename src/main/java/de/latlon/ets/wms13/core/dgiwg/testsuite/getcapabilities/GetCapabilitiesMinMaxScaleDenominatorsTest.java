@@ -20,6 +20,8 @@ import org.w3c.dom.NodeList;
 
 /**
  * Tests if the Layer/Style contains values for Title and Name.
+ * Test merged with GetCapabilitiesLayerScaleDenominatorsTest class. Unused now.
+ * 
  * 
  * @author <a href="mailto:goltz@lat-lon.de">Lyn Goltz</a>
  */

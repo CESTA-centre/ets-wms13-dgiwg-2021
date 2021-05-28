@@ -41,7 +41,7 @@ public class GetMapBlankExceptionsTest extends BaseGetMapFixture {
         this.reqEntity.removeKvp( EXCEPTIONS_PARAM );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 26")
+    @Test(groups="A WMS server shall support the BLANK EXCEPTIONS.", description = "When TRANSPARENT parameter is set to true, checks if every pixels are transparent.")
     public void wmsGetMapBlankExceptionsSupported_TransparentTrue( ITestContext testContext )
                     throws SOAPException {
         URI endpoint = ServiceMetadataUtils.getOperationEndpoint( this.wmsCapabilities, GET_MAP, ProtocolBinding.GET );
@@ -54,14 +54,14 @@ public class GetMapBlankExceptionsTest extends BaseGetMapFixture {
 
         ClientResponse rsp = wmsClient.submitRequest( this.reqEntity, endpoint );
 
-        storeResponseImage( rsp, "Requirement26", "blankExceptionExpected_transparentBackground", requestFormat );
+        storeResponseImage( rsp, "Requirement21", "blankExceptionExpected_transparentBackground", requestFormat );
 
         assertTrue( rsp.hasEntity(), ErrorMessage.get( ErrorMessageKey.MISSING_XML_ENTITY ) );
         assertStatusCode( rsp.getStatus(), 200 );
         assertContentType( rsp.getHeaders(), requestFormat );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.3., S.19, Requirement 26")
+    @Test(groups="A WMS server shall support the BLANK EXCEPTIONS.", description = "When TRANSPARENT parameter is set to false, checks if every pixels are in only one color.")
     public void wmsGetMapBlankExceptionsSupported_TransparentFalse( ITestContext testContext )
                     throws SOAPException {
         URI endpoint = ServiceMetadataUtils.getOperationEndpoint( this.wmsCapabilities, GET_MAP, ProtocolBinding.GET );
@@ -74,7 +74,7 @@ public class GetMapBlankExceptionsTest extends BaseGetMapFixture {
 
         ClientResponse rsp = wmsClient.submitRequest( this.reqEntity, endpoint );
 
-        storeResponseImage( rsp, "Requirement26", "blankExceptionExpected_blackBackground", requestFormat );
+        storeResponseImage( rsp, "Requirement21", "blankExceptionExpected_blackBackground", requestFormat );
 
         assertTrue( rsp.hasEntity(), ErrorMessage.get( ErrorMessageKey.MISSING_XML_ENTITY ) );
         assertStatusCode( rsp.getStatus(), 200 );

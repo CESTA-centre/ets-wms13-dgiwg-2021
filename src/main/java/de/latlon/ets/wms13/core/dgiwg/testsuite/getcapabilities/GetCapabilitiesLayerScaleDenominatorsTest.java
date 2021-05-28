@@ -2,6 +2,7 @@ package de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities;
 
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseRequestableLayerNodes;
 import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
@@ -38,7 +39,7 @@ public class GetCapabilitiesLayerScaleDenominatorsTest extends AbstractBaseGetCa
         return layers;
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 18", dataProvider = "layerNodes")
+    @Test(groups="When scale denominators are both specified, the <MinScaleDenominator> value shall always be less than or equal to the <MaxScaleDenominator> value.", description = "Checks if contains wms:MinScaleDenominator and wms:MaxScaleDenominator.", dataProvider = "layerNodes")
     public
                     void wmsCapabilitiesLayerScaleDenominatorsExists( Node layerNode, String name, String title )
                                     throws XPathExpressionException, XPathFactoryConfigurationException {
@@ -50,6 +51,16 @@ public class GetCapabilitiesLayerScaleDenominatorsTest extends AbstractBaseGetCa
         Node maxScaleDenominatorsNode = (Node) createXPath().evaluate( maxScaleExpr, layerNode, XPathConstants.NODE );
         assertNotNull( maxScaleDenominatorsNode, "MaxScaleDenominator element for layer is missing." );
     }
+    
+    @Test(groups="When scale denominators are both specified, the <MinScaleDenominator> value shall always be less than or equal to the <MaxScaleDenominator> value.", description = "Checks if minScaleDenominator is lesser or equal than maxScaleDenominator.", dataProvider = "scaleDenominators", dependsOnMethods="wmsCapabilitiesLayerScaleDenominatorsExists")
+    public
+                    void wmsCapabilitiesLayerHasCorrectValuesForMinAndMaxDenominator( Double minScaleDenominator,
+                                                                                      Double maxScaleDenominator ) {
+        String message = String.format( "minScaleDenomintor must be les or equal then maxScaleDenominator, but was %s (min) and %s (max)",
+                                        minScaleDenominator, maxScaleDenominator );
+        assertTrue( minScaleDenominator <= maxScaleDenominator, message );
+    }
+    
 
     private XPath createXPath()
                     throws XPathFactoryConfigurationException {

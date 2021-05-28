@@ -35,28 +35,40 @@ public class GetMapOutputFormatTest extends BaseGetMapFixture {
         this.reqEntity.removeKvp( FORMAT_PARAM );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5")
+    @Test(groups = {"A WMS server shall provide tiles in at least one of the following raster formats  : \\n\"\n"
+    		+ "    		+ \"• image/png (Portable Network Graphics) \\n\"\n"
+    		+ "    		+ \"• image/gif (Graphics Interchange Format) \\n\"\n"
+    		+ "    		+ \"• image/jpeg (Joint Photographics Expert Group)."}, description = "Checks on Capabilities if image/png is supported.")
     public void wmsCapabilitiesOutputFormatImagePngSupported()
                     throws SOAPException {
         String xPathXml = "//wms:WMS_Capabilities/wms:Capability/wms:Request/wms:GetMap/wms:Format/text() = 'image/png'";
         assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5")
+    @Test(groups = {"A WMS server shall provide tiles in at least one of the following raster formats  : \\n\"\n"
+    		+ "    		+ \"• image/png (Portable Network Graphics) \\n\"\n"
+    		+ "    		+ \"• image/gif (Graphics Interchange Format) \\n\"\n"
+    		+ "    		+ \"• image/jpeg (Joint Photographics Expert Group)."}, description = "Checks on Capabilities if image/gif is supported.")
     public void wmsCapabilitiesOutputFormatImageGifSupported()
                     throws SOAPException {
         String xPathHtml = "//wms:WMS_Capabilities/wms:Capability/wms:Request/wms:GetMap/wms:Format/text() = 'image/gif'";
         assertXPath( xPathHtml, wmsCapabilities, NS_BINDINGS );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5")
+    @Test(groups = {"A WMS server shall provide tiles in at least one of the following raster formats  : \\n\"\n"
+    		+ "    		+ \"• image/png (Portable Network Graphics) \\n\"\n"
+    		+ "    		+ \"• image/gif (Graphics Interchange Format) \\n\"\n"
+    		+ "    		+ \"• image/jpeg (Joint Photographics Expert Group)."}, description = "Checks on Capabilities if image/jpeg is supported.")
     public void wmsCapabilitiesOutputFormatImageJpegSupported()
                     throws SOAPException {
         String xPathHtml = "//wms:WMS_Capabilities/wms:Capability/wms:Request/wms:GetMap/wms:Format/text() = 'image/jpeg'";
         assertXPath( xPathHtml, wmsCapabilities, NS_BINDINGS );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5", dependsOnMethods = "wmsCapabilitiesOutputFormatImagePngSupported")
+    @Test(groups = {"A WMS server shall provide tiles in at least one of the following raster formats  : \\n\"\n"
+    		+ "    		+ \"• image/png (Portable Network Graphics) \\n\"\n"
+    		+ "    		+ \"• image/gif (Graphics Interchange Format) \\n\"\n"
+    		+ "    		+ \"• image/jpeg (Joint Photographics Expert Group)."}, description = "Checks if GetMap response is in image/png format.")
     public
                     void wmsGetMapOutputFormatImagePngSupported()
                                     throws SOAPException {
@@ -68,7 +80,10 @@ public class GetMapOutputFormatTest extends BaseGetMapFixture {
         assertContentType( rsp.getHeaders(), IMAGE_PNG );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5", dependsOnMethods = "wmsCapabilitiesOutputFormatImageGifSupported")
+    @Test(groups = {"A WMS server shall provide tiles in at least one of the following raster formats  : \\n\"\n"
+    		+ "    		+ \"• image/png (Portable Network Graphics) \\n\"\n"
+    		+ "    		+ \"• image/gif (Graphics Interchange Format) \\n\"\n"
+    		+ "    		+ \"• image/jpeg (Joint Photographics Expert Group)."}, description = "Checks if GetMap response is in image/gif format.")
     public
                     void wmsGetMapOutputFormatImageGifSupported()
                                     throws SOAPException {
@@ -80,7 +95,10 @@ public class GetMapOutputFormatTest extends BaseGetMapFixture {
         assertContentType( rsp.getHeaders(), IMAGE_GIF );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.5.3.2., S.9, Requirement 5", dependsOnMethods = "wmsCapabilitiesOutputFormatImageJpegSupported")
+    @Test(groups = {"A WMS server shall provide tiles in at least one of the following raster formats  : \\n\"\n"
+    		+ "    		+ \"• image/png (Portable Network Graphics) \\n\"\n"
+    		+ "    		+ \"• image/gif (Graphics Interchange Format) \\n\"\n"
+    		+ "    		+ \"• image/jpeg (Joint Photographics Expert Group)."}, description = "Checks if GetMap response is in image/jpeg format.")
     public
                     void wmsGetMapOutputFormatImageJpegSupported()
                                     throws SOAPException {
