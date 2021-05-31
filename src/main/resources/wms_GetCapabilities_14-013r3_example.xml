@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities version="1.3.0"
+	xmlns="http://www.opengis.net/wms"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="http://www.opengis.net/wms
+http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd">
+	<Service>
+		<Name>WMS</Name>
+		<Title>DGIWG test implementation of DGIWG WMS profile</Title>
+		<Abstract>This is provided to test the development of a profile for WMS, This service
+implements the DGIWG WMS 1.3 profile version 1.0. </Abstract>
+		<KeywordList>
+			<Keyword vocabulary="https://www.dgiwg.org/FAD/">Transportation</Keyword>
+			<Keyword vocabulary="https://www.dgiwg.org/FAD/">Military</Keyword>
+			<Keyword vocabulary="https://www.dgiwg.org/FAD/">SocioEconomicGeography</Keyword>
+			<Keyword vocabulary="ISO 19115:2003”">transportation</Keyword>
+			<Keyword vocabulary="ISO 19115:2003”">society</Keyword>
+			<Keyword vocabulary="ISO 19115:2003”">intelligenceMilitary</Keyword>
+			<Keyword>DGIWG</Keyword>
+		</KeywordList>
+		<OnlineResource xlink:type="simple"
+			xlink:href="https://www.dgiwg.org" />
+		<!--No requirement on LayerLimit value. If omitted would still produce 
+			a compliant GetCapabilities -->
+		<LayerLimit>25</LayerLimit>
+		<!--MaxWidth and MaxHeight if omitted would still produce a compliant GetCapabilities -->
+		<MaxWidth>800</MaxWidth>
+		<MaxHeight>800</MaxHeight>
+	</Service>
+	<Capability>
+		<Request>
+			<GetCapabilities>
+				<Format>text/xml</Format>
+				<Format>text/html</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xlink:type="simple"
+								xlink:href="https://myServer.com/WMS" />
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetCapabilities>
+			<GetMap>
+				<Format>image/jpeg</Format>
+				<Format>image/png</Format>
+				<Format>image/gif</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xlink:type="simple"
+								xlink:href="https://myServer.com/WMS" />
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetMap>
+			<GetFeatureInfo>
+				<Format>text/xml</Format>
+				<Format>text/html</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+							<OnlineResource xlink:type="simple"
+								xlink:href="https://myServer.com/WMS" />
+						</Get>
+					</HTTP>
+				</DCPType>
+			</GetFeatureInfo>
+		</Request>
+		<Exception>
+			<Format>INIMAGE</Format>
+			<Format>XML</Format>
+			<Format>BLANK</Format>
+		</Exception>
+		<!-- this is a hierarchical layer -->
+		<Layer>
+			<Name>MGCP</Name>
+			<Title>MGCP layer</Title>
+			<Abstract>This layer has been generated from MGCP data at 1/50K scale.
+</Abstract>
+			<KeywordList>
+				<Keyword vocabulary="https://www.dgiwg.org/FAD/">Railways</Keyword>
+				<Keyword vocabulary="https://www.dgiwg.org/FAD/">RoadsTracks</Keyword>
+				<Keyword vocabulary="https://www.dgiwg.org/FAD/">AirTransportation</Keyword>
+				<Keyword vocabulary="https://www.dgiwg.org/FAD/">Restricted Areas
+and/or Boundaries</Keyword>
+				<Keyword vocabulary="https://www.dgiwg.org/FAD/">Politics and/or
+Administration</Keyword>
+			</KeywordList>
+			<CRS>CRS:84</CRS>
+			<CRS>EPSG:4326</CRS>
+			<CRS>EPSG:3395</CRS>
+			<EX_GeographicBoundingBox>
+				<westBoundLongitude>-10.1535960995563</westBoundLongitude>
+				<eastBoundLongitude>4.28847853801868</eastBoundLongitude>
+				<southBoundLatitude>49.1760995690644</southBoundLatitude>
+				<northBoundLatitude>62.1716681019098</northBoundLatitude>
+			</EX_GeographicBoundingBox>
+			<BoundingBox CRS="CRS:84" minx="-10.1535960995563"
+				miny="49.1760995690644" maxx="4.28847853801868"
+				maxy="62.1716681019098" />
+			<BoundingBox CRS="EPSG:4326" minx="49.1760995690644"
+				miny="-10.1535960995563" maxx="62.1716681019098"
+				maxy="4.28847853801868" />
+			<BoundingBox CRS="EPSG:3395" minx="-1130293.14752318"
+				miny="6255875.09329192" maxx="477391.247130122"
+				maxy="8840315.18828581" />
+			<!-- This is layer 1 with transportation features -->
+			<Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
+				<!-- Layer queryable=”0” would also be valid -->
+				<Name>MGCP_Transportation</Name>
+				<Title>MGCP transportation layer</Title>
+				<Abstract>This layer contains transportation features from MGCP
+data.</Abstract>
+				<KeywordList>
+					<Keyword vocabulary="https://www.dgiwg.org/FAD/">Railways</Keyword>
+					<Keyword vocabulary="https://www.dgiwg.org/FAD/">RoadsTracks</Keyword>
+					<Keyword vocabulary="https://www.dgiwg.org/FAD/">AirTransportation</Keyword>
+				</KeywordList>
+				<CRS>CRS:84</CRS>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:3395</CRS>
+				<CRS>EPSG:32628</CRS>
+				<!-- Following CRS are UTM zones -->
+				<CRS>EPSG:32629</CRS>
+				<CRS>EPSG:32630</CRS>
+				<CRS>EPSG:32631</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>-9.49713815455354</westBoundLongitude>
+					<eastBoundLongitude>3.6320205928561</eastBoundLongitude>
+					<southBoundLatitude>49.7668072354576</southBoundLatitude>
+					<northBoundLatitude>61.4645902255622</northBoundLatitude>
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="CRS:84" minx="-9.49713815455354"
+					miny="49.7668072354576" maxx="3.6320205928561"
+					maxy="61.4645902255622" />
+				<BoundingBox CRS="EPSG:4326" minx="49.7668072354576"
+					miny="-9.49713815455354" maxx="61.4645902255622"
+					maxy="3.6320205928561" />
+				<BoundingBox CRS="EPSG:3395" minx="-1057216.58335827"
+					miny="6373349.64406279" maxx="404314.682947424"
+					maxy="8695713.5043031" />
+				<BoundingBox CRS="EPSG:32628" minx="793024.68315553"
+					miny="5527248.51711237" maxx="1837454.99286334"
+					maxy="6956813.88497105" />
+				<BoundingBox CRS="EPSG:32629" minx="464199.601699745"
+					miny="5512703.78924251" maxx="1408401.65601044"
+					maxy="6879829.43013705" />
+				<BoundingBox CRS="EPSG:32630" minx="32287.7441544105"
+					miny="5512703.78916081" maxx="977414.853119147"
+					maxy="6832515.66692919" />
+				<BoundingBox CRS="EPSG:32631" minx="-398729.782539505"
+					miny="5512703.78912287" maxx="545513.62628886"
+					maxy="6878440.59046608" />
+				<MetadataURL
+					type="urn:dgiwg:metadata:dmf:1.0:profile:all">
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple"
+						xlink:href="http://myServer.com/cswservice/csw?service=CSW&amp;version=2.0.2&amp;Request=G
+etRecordById&amp;id=123456" />
+				</MetadataURL>
+				<DataURL>
+					<Format></Format>
+					<OnlineResource></OnlineResource>
+				</DataURL>
+				<FeatureListURL>
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple"
+						xlink:href="http://myServer.com/MGCPFeatureList.xml" />
+				</FeatureListURL>
+				<Style>
+					<Name>default</Name>
+					<Title>default MGCP style</Title>
+					<LegendURL width="200" height="600">
+						<Format>image/png</Format>
+						<OnlineResource
+							xlink:href="http://myServer.com/MGCPLegend.png"
+							xlink:type="simple" />
+					</LegendURL>
+				</Style>
+				<MinScaleDenominator>12500</MinScaleDenominator>
+				<MaxScaleDenominator>200000</MaxScaleDenominator>
+			</Layer>
+			<!-- This is layer 2 with boundaries features -->
+			<Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
+				<!-- Layer queryable=”0” would also be valid -->
+				<Name>MGCP_Boundaries</Name>
+				<Title>MGCP boundaries layer</Title>
+				<Abstract>This layer contains boundaries and administration features from
+MGCP data.</Abstract>
+				<KeywordList>
+					<Keyword vocabulary="https://www.dgiwg.org/FAD/">Restricted
+Areas and/or Boundaries</Keyword>
+				</KeywordList>
+				<CRS>CRS:84</CRS>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:3395</CRS>
+				<!-- Following CRS are UTM zones -->
+				<CRS>EPSG:32628</CRS>
+				<CRS>EPSG:32629</CRS>
+				<CRS>EPSG:32630</CRS>
+				<CRS>EPSG:32631</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>-9.49713815455354</westBoundLongitude>
+					<eastBoundLongitude>3.6320205928561</eastBoundLongitude>
+					<southBoundLatitude>49.7668072354576</southBoundLatitude>
+					<northBoundLatitude>61.4645902255622</northBoundLatitude>
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="CRS:84" minx="-9.49713815455354"
+					miny="49.7668072354576" maxx="3.6320205928561"
+					maxy="61.4645902255622" />
+				<BoundingBox CRS="EPSG:4326" minx="49.7668072354576"
+					miny="-9.49713815455354" maxx="61.4645902255622"
+					maxy="3.6320205928561" />
+				<BoundingBox CRS="EPSG:3395" minx="-1057216.58335827"
+					miny="6373349.64406279" maxx="404314.682947424"
+					maxy="8695713.5043031" />
+				<BoundingBox CRS="EPSG:32628" minx="793024.68315553"
+					miny="5527248.51711237" maxx="1837454.99286334"
+					maxy="6956813.88497105" />
+				<BoundingBox CRS="EPSG:32629" minx="464199.601699745"
+					miny="5512703.78924251" maxx="1408401.65601044"
+					maxy="6879829.43013705" />
+				<BoundingBox CRS="EPSG:32630" minx="32287.7441544105"
+					miny="5512703.78916081" maxx="977414.853119147"
+					maxy="6832515.66692919" />
+				<BoundingBox CRS="EPSG:32631" minx="-398729.782539505"
+					miny="5512703.78912287" maxx="545513.62628886"
+					maxy="6878440.59046608" />
+				<MetadataURL
+					type="urn:dgiwg:metadata:dmf:1.0:profile:all">
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple"
+						xlink:href="http://myServer.com/cswservice/csw?service=CSW&amp;version=2.0.2&amp;Request=G
+etRecordById&amp;id=123456" />
+				</MetadataURL>
+				<DataURL>
+					<Format></Format>
+					<OnlineResource></OnlineResource>
+				</DataURL>
+				<FeatureListURL>
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple"
+						xlink:href="http://myServer.com/MGCPFeatureList.xml" />
+				</FeatureListURL>
+				<Style>
+					<Name>default</Name>
+					<Title>default MGCP style</Title>
+					<LegendURL width="200" height="600">
+						<Format>image/png</Format>
+						<OnlineResource
+							xlink:href="http://myServer.com/MGCPLegend.png"
+							xlink:type="simple" />
+					</LegendURL>
+				</Style>
+				<MinScaleDenominator>125000</MinScaleDenominator>
+				<MaxScaleDenominator>200000</MaxScaleDenominator>
+			</Layer>
+			<!-- This is layer 3 with administration features -->
+			<Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
+				<!-- Layer queryable=”0” would also be valid -->
+				<Name>MGCP_Administration</Name>
+				<Title>MGCP administration layer</Title>
+				<Abstract>This layer contains administration features from MGCP
+data.</Abstract>
+				<KeywordList>
+					<Keyword vocabulary="https://www.dgiwg.org/FAD/">Politics and/or
+Administration</Keyword>
+				</KeywordList>
+				<CRS>CRS:84</CRS>
+				<CRS>EPSG:4326</CRS>
+				<CRS>EPSG:3395</CRS>
+				<!-- Following CRS are UTM zones -->
+				<CRS>EPSG:32628</CRS>
+				<CRS>EPSG:32629</CRS>
+				<CRS>EPSG:32630</CRS>
+				<CRS>EPSG:32631</CRS>
+				<EX_GeographicBoundingBox>
+					<westBoundLongitude>-9.49713815455354</westBoundLongitude>
+					<eastBoundLongitude>3.6320205928561</eastBoundLongitude>
+					<southBoundLatitude>49.7668072354576</southBoundLatitude>
+					<northBoundLatitude>61.4645902255622</northBoundLatitude>
+				</EX_GeographicBoundingBox>
+				<BoundingBox CRS="CRS:84" minx="-9.49713815455354"
+					miny="49.7668072354576" maxx="3.6320205928561"
+					maxy="61.4645902255622" />
+				<BoundingBox CRS="EPSG:4326" minx="49.7668072354576"
+					miny="-9.49713815455354" maxx="61.4645902255622"
+					maxy="3.6320205928561" />
+				<BoundingBox CRS="EPSG:3395" minx="-1057216.58335827"
+					miny="6373349.64406279" maxx="404314.682947424"
+					maxy="8695713.5043031" />
+				<BoundingBox CRS="EPSG:32628" minx="793024.68315553"
+					miny="5527248.51711237" maxx="1837454.99286334"
+					maxy="6956813.88497105" />
+				<BoundingBox CRS="EPSG:32629" minx="464199.601699745"
+					miny="5512703.78924251" maxx="1408401.65601044"
+					maxy="6879829.43013705" />
+				<BoundingBox CRS="EPSG:32630" minx="32287.7441544105"
+					miny="5512703.78916081" maxx="977414.853119147"
+					maxy="6832515.66692919" />
+				<BoundingBox CRS="EPSG:32631" minx="-398729.782539505"
+					miny="5512703.78912287" maxx="545513.62628886"
+					maxy="6878440.59046608" />
+				<MetadataURL
+					type="urn:dgiwg:metadata:dmf:1.0:profile:all">
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple"
+						xlink:href="http://myServer.com/cswservice/csw?service=CSW&amp;version=2.0.2&amp;Request=G
+etRecordById&amp;id=123456" />
+				</MetadataURL>
+				<DataURL>
+					<Format></Format>
+					<OnlineResource></OnlineResource>
+				</DataURL>
+				<FeatureListURL>
+					<Format>text/xml</Format>
+					<OnlineResource xlink:type="simple"
+						xlink:href="http://myServer.com/MGCPFeatureList.xml" />
+				</FeatureListURL>
+				<Style>
+					<Name>default</Name>
+					<Title>default MGCP style</Title>
+					<LegendURL width="200" height="600">
+						<Format>image/png</Format>
+						<OnlineResource
+							xlink:href="http://myServer.com/MGCPLegend.png"
+							xlink:type="simple" />
+					</LegendURL>
+				</Style>
+				<MinScaleDenominator>125000</MinScaleDenominator>
+				<MaxScaleDenominator>200000</MaxScaleDenominator>
+			</Layer>
+		</Layer>
+	</Capability>
+</WMS_Capabilities>

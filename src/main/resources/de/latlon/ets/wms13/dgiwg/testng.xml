@@ -65,6 +65,8 @@
 				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getfeatureinfo.interactive.GetFeatureInfoExceptionInEnglishLanguageTest" />
 			<class
 				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getmap.interactive.GetMapExceptionInEnglishLanguageTest" />
+			<class
+				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.interactive.GetCapabilitiesExceptionInEnglishLanguageTest" />
 		</classes>
 	</test>
 	<test

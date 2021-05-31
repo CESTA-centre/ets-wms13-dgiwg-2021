@@ -110,7 +110,8 @@
       <Format>BLANK</Format>
       <Format>JSON</Format>
     </Exception>
-    <Layer>
+    <Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
       <Title>WMS Vecteur Geoportail</Title>
       <Abstract>Ce service permet la visualisation de couches de données vecteur IGN au travers d'un flux WMS</Abstract>
       <!--Limited list of EPSG projections:-->
@@ -258,7 +259,8 @@
         <MinScaleDenominator>1.0</MinScaleDenominator>
         <MaxScaleDenominator>2.0E7</MaxScaleDenominator>
       </Layer>
-      <Layer queryable="1">
+      <Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
         <Name>GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE</Name>
         <Title>GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE</Title>
         <Abstract>Layer-Group type layer: GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE</Abstract>
@@ -279,7 +281,8 @@
         <MinScaleDenominator>1.0</MinScaleDenominator>
         <MaxScaleDenominator>1.0E7</MaxScaleDenominator>
       </Layer>
-      <Layer queryable="1">
+      <Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
         <Name>ORTHOIMAGERY.ORTHO-SAT.SPOT.2015.GRAPHE-MOSAIQUAGE</Name>
         <Title>ORTHOIMAGERY.ORTHO-SAT.SPOT.2015.GRAPHE-MOSAIQUAGE</Title>
         <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHO-SAT.SPOT.2015.GRAPHE-MOSAIQUAGE</Abstract>
@@ -300,7 +303,8 @@
         <MinScaleDenominator>10000.0</MinScaleDenominator>
         <MaxScaleDenominator>1.0E7</MaxScaleDenominator>
       </Layer>
-      <Layer queryable="1">
+      <Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
         <Name>ORTHOIMAGERY.ORTHO-SAT.SPOT.2016.GRAPHE-MOSAIQUAGE</Name>
         <Title>ORTHOIMAGERY.ORTHO-SAT.SPOT.2016.GRAPHE-MOSAIQUAGE</Title>
         <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHO-SAT.SPOT.2016.GRAPHE-MOSAIQUAGE</Abstract>
@@ -321,7 +325,8 @@
         <MinScaleDenominator>10000.0</MinScaleDenominator>
         <MaxScaleDenominator>1.0E7</MaxScaleDenominator>
       </Layer>
-      <Layer queryable="1">
+      <Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
         <Name>ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE</Name>
         <Title>ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE</Title>
         <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE</Abstract>
@@ -340,7 +345,8 @@
           <OnlineResource xlink:href="https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;Id=IGNF_BDORTHOHistor_1-0.xml" xlink:type="simple"/>
         </MetadataURL>
       </Layer>
-      <Layer queryable="1">
+      <Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
         <Name>ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE</Name>
         <Title>ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE</Title>
         <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE</Abstract>
@@ -361,7 +367,8 @@
         <MinScaleDenominator>800.0</MinScaleDenominator>
         <MaxScaleDenominator>1.0E7</MaxScaleDenominator>
       </Layer>
-      <Layer queryable="1">
+      <Layer queryable="1" noSubsets="0" fixedWidth="0"
+				fixedHeight="0" opaque="0">
         <Name>ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE</Name>
         <Title>ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE</Title>
         <Abstract>Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE</Abstract>

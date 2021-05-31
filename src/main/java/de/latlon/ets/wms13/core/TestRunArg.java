@@ -49,7 +49,13 @@ public enum TestRunArg {
      * <code>true</code> if the interactive test for GetMap response in english
      * language is passed, <code>false</code> otherwise
      */
-    GETMAP_EXCEPTION_IN_ENGLISH;
+    GETMAP_EXCEPTION_IN_ENGLISH, 
+    
+    /**
+     * <code>true</code> if the interactive test for GetCapabilities response in english
+     * language is passed, <code>false</code> otherwise
+     */
+    GETCAPABILITIES_EXCEPTION_IN_ENGLISH;
 	
 
     @Override

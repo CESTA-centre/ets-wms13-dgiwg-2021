@@ -97,6 +97,26 @@ public final class InteractiveTestUtils {
     }
     
     /**
+     * Creates a GetCapabilities request with unsupported layer.
+     * 
+     * @param wmsCapabilitiesUrl
+     *            the url of the WMS capabilities, never <code>null</code>
+     * @return a GetCapabilities request with unsupported layer, never <code>null</code>
+     */
+    public static String retrieveInvalidGetCapabilitiesRequest( String wmsCapabilitiesUrl ) {
+    	Document wmsCapabilities = readCapabilities( wmsCapabilitiesUrl );
+        URI getFeatureInfoEndpoint = getOperationEndpoint( wmsCapabilities, GET_FEATURE_INFO, GET );
+        List<LayerInfo> layerInfos = parseLayerInfo( wmsCapabilities );
+
+        WmsKvpRequest getFeatureInfoRequest = buildGetFeatureInfoRequest( wmsCapabilities, layerInfos );
+        getFeatureInfoRequest.addKvp( LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
+        getFeatureInfoRequest.addKvp( QUERY_LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
+        return createUri( getFeatureInfoEndpoint, getFeatureInfoRequest );
+    }
+    
+    
+    
+    /**
      * Get title of GetCapabilities document.
      * 
      * @param wmsCapabilitiesUrl
@@ -104,10 +124,10 @@ public final class InteractiveTestUtils {
      * @return a the title of capabilities document.
      */
     public static String retrieveTitleInLocaleLanguage( String wmsCapabilitiesUrl ) {
-    	System.out.println("!!!! ICI");
+    	
     	//System.out.println("!!!! wmsCapabilitiesUrl = " + wmsCapabilitiesUrl);
     	//Document wmsCapabilities = readCapabilities( wmsCapabilitiesUrl );
-    	System.out.println("!!!! ICI ok");
+    	
         //List<String> sentence = parseCapabilityTitles( wmsCapabilities );	
         //System.out.println("!!!! LA ok" + sentence);
         //return sentence.get(0);

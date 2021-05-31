@@ -2,6 +2,7 @@ package de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities;
 
 import static de.latlon.ets.core.assertion.ETSAssert.assertXPath;
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseRequestableLayerNodes;
+import static org.testng.Assert.assertTrue;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
@@ -42,8 +43,23 @@ public class GetCapabilitiesLayerAttributesTest extends AbstractBaseGetCapabilit
     public
                     void wmsCapabilitiesLayerAttributesExists( Node layerNode, String name, String title )
                                     throws XPathExpressionException, XPathFactoryConfigurationException {
-        String attributes = "@queryable and @cascaded and @opaque and @noSubsets and @fixedWidth and @fixedHeight";
+        String attributes = "@noSubsets and @fixedWidth and @fixedHeight";
         assertXPath( attributes, layerNode, NS_BINDINGS );
+    }
+    
+    @Test(groups="A WMS server shall provide the Layer Attributes with following restrictions on their values : noSubsets (0, false), fixedWidth (0), FixedHeight (0).", description = "Checks if noSubsets, fixedWidth and FixedHeight have valid restrictions.", dataProvider = "layerNodes", dependsOnMethods="wmsCapabilitiesLayerAttributesExists")
+    public
+                    void validAttributesValues( Node layerNode, String name, String title )
+                                    throws XPathExpressionException, XPathFactoryConfigurationException {
+        
+        String noSubsetsValue = (String) createXPath().evaluate( "@noSubsets", layerNode, XPathConstants.STRING );
+        String fixedWidthValue = (String) createXPath().evaluate( "@fixedWidth", layerNode, XPathConstants.STRING );
+        String fixedHeightValue = (String) createXPath().evaluate( "@fixedHeight", layerNode, XPathConstants.STRING );
+        
+        assertTrue( noSubsetsValue.equals("0"), "noSubsetsValue equals " + noSubsetsValue + " whereas it shall be 0.");
+        assertTrue( fixedWidthValue.equals("0"), "fixedWidthValue equals " + fixedWidthValue + " whereas it shall be 0.");
+        assertTrue( fixedHeightValue.equals("0"), "fixedHeightValue equals " + fixedHeightValue + " whereas it shall be 0.");
+        
     }
 
     private XPath createXPath()
