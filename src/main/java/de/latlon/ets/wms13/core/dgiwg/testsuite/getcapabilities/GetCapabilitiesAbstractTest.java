@@ -26,9 +26,9 @@ import de.latlon.ets.wms13.core.util.ServiceMetadataUtils;
  */
 public class GetCapabilitiesAbstractTest extends AbstractBaseGetCapabilitiesFixture {
 
-    private static final String EXPECTED_ABSTRACT = "This service implements the DGIWG WMS 1.3 profile version 1.0.";
+    private static final String EXPECTED_ABSTRACT = "This service implements the WMS 1.3 STANAG 6523 Ed.2 profile";
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 11")
+    @Test(groups="If a WMS server is providing services to a coalition mission federated network, in support of operations or an exercise, it shall include the following information in the <abstract> element of the service metadata: \"This service implements the WMS 1.3 STANAG 6523 Ed.2 profile\". The provision of these metadata elements are optional for a WMS server which is providing services across one single non-mission network.", description = "Checks if Abstract content corresponds to specific string.")
     public void wmsCapabilitiesAbstractContainsProfile()
                     throws XPathFactoryConfigurationException, XPathExpressionException {
         URI endpoint = ServiceMetadataUtils.getOperationEndpoint( this.wmsCapabilities, GET_CAPABILITIES,

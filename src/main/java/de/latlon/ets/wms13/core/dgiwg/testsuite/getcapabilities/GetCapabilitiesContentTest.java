@@ -13,66 +13,25 @@ import org.testng.annotations.Test;
  */
 public class GetCapabilitiesContentTest extends AbstractBaseGetCapabilitiesFixture {
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
-    public void wmsCapabilitiesNameExists()
-                    throws SOAPException {
-        String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:Name/text() != ''";
-        assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
-    }
-
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
-    public void wmsCapabilitiesTitleExists()
-                    throws SOAPException {
-        String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:Title/text() != ''";
-        assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
-    }
-
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
-    public void wmsCapabilitiesOnlineResourceExists()
-                    throws SOAPException {
-        String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:OnlineResource/@xlink:href != ''";
-        assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
-    }
-
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
-    public void wmsCapabilitiesAbstractExists()
-                    throws SOAPException {
-        String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:Abstract/text() != ''";
-        assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
-    }
-
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
+    @Test(groups="If a WMS server is providing services to a coalition mission federated network, in support of operations or an exercise, it shall provide \"ContactInformation\", \"AccessConstraints\" and \"KeywordList\" elements. The provision of these metadata elements are optional for a WMS server which is providing services across one single non-mission network.", description = "Checks if KeywordList is provided.")
     public void wmsCapabilitiesKeywordListExists()
                     throws SOAPException {
         String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:KeywordList != ''";
         assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
+    @Test(groups="If a WMS server is providing services to a coalition mission federated network, in support of operations or an exercise, it shall provide \"ContactInformation\", \"AccessConstraints\" and \"KeywordList\" elements. The provision of these metadata elements are optional for a WMS server which is providing services across one single non-mission network.", description = "Checks if ContactInformation is provided.")
     public void wmsCapabilitiesContactInformationExists()
                     throws SOAPException {
         String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:ContactInformation != ''";
         assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
     }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
-    public void wmsCapabilitiesFeesExists()
-                    throws SOAPException {
-        String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:Fees/text() != ''";
-        assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
-    }
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
+    @Test(groups="If a WMS server is providing services to a coalition mission federated network, in support of operations or an exercise, it shall provide \"ContactInformation\", \"AccessConstraints\" and \"KeywordList\" elements. The provision of these metadata elements are optional for a WMS server which is providing services across one single non-mission network.", description = "Checks if AccessConstraints is provided.")
     public void wmsCapabilitiesAccessConstraintsExists()
                     throws SOAPException {
         String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:AccessConstraints/text() != ''";
-        assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
-    }
-
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.2., S.13, Requirement 9")
-    public void wmsCapabilitiesLayerLimitExists()
-                    throws SOAPException {
-        String xPathXml = "//wms:WMS_Capabilities/wms:Service/wms:LayerLimit/text() != ''";
         assertXPath( xPathXml, wmsCapabilities, NS_BINDINGS );
     }
 

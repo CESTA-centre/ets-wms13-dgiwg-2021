@@ -16,8 +16,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import de.latlon.ets.core.keyword.DfddKeywordMatcher;
-import de.latlon.ets.core.keyword.DfddKeywordMatcherFromFile;
+import de.latlon.ets.wms13.core.keyword.DgifKeywordMatcher;
+import de.latlon.ets.wms13.core.keyword.DgifKeywordMatcherFromFile;
 
 /**
  * Tests if the service contains at least one expected keywords.
@@ -26,16 +26,17 @@ import de.latlon.ets.core.keyword.DfddKeywordMatcherFromFile;
  */
 public class GetCapabilitiesKeywordTest extends AbstractBaseGetCapabilitiesFixture {
 
-    private static final DfddKeywordMatcher DFDD_KEYWORD_MATCHER = new DfddKeywordMatcherFromFile();
+    private static final DgifKeywordMatcher DGIF_KEYWORD_MATCHER = new DgifKeywordMatcherFromFile();
 
-    @Test(description = "DGIWG - Web Map Service 1.3 Profile, 6.6.2.3., S.15, Requirement 12")
-    public void wmsCapabilitiesContainsKeywordFromDFDDRegister()
+    @Test(groups="If a WMS server is providing services to a coalition mission federated network, in support of operations or an exercise, it shall provide a minimum keyword list, based on ISO 19115 Topic Categories. It's recommended to provide additional details based on the DGIF groups.\n"
+    		+ "The provision of these keywords elements are optional for a WMS server which is providing services across one single non-mission network.", description = "Checks if Keyword contains at least one keyword in the list of DGIF groups.")
+    public void wmsCapabilitiesContainsKeywordFromDGIFRegister()
                     throws XPathFactoryConfigurationException, XPathExpressionException {
         List<String> keywords = parseKeywords( wmsCapabilities );
-        boolean atLeastOneKeywordIsFromDfdd = DFDD_KEYWORD_MATCHER.containsAtLeastOneDfddKeyword( keywords );
+        boolean atLeastOneKeywordIsFromDgif = DGIF_KEYWORD_MATCHER.containsAtLeastOneDgifKeyword( keywords );
 
-        assertTrue( atLeastOneKeywordIsFromDfdd,
-                    "Invalid keywords, expected is at least one keyword from DFDD, but is " + keywords );
+        assertTrue( atLeastOneKeywordIsFromDgif,
+                    "Invalid keywords, expected is at least one keyword from ISO 19115 Topic Categories (DGIF groups), but is " + keywords );
     }
 
     private List<String> parseKeywords( Document wmsCapabilities )

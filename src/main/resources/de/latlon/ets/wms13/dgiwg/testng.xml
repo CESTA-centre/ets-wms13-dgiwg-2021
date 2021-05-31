@@ -76,10 +76,14 @@
 				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractExists" />
 		</classes>
 	</test>
+	<test
+		name="DGIWG - Web Map Service 1.3 Harmonized Profile, Requirement 8">
+		<classes>
+			<class
+				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest" />
 
-
-
-
+		</classes>
+	</test>
 	<test
 		name="DGIWG - Web Map Service 1.3 Harmonized Profile, Requirement 9">
 		<classes>
@@ -87,10 +91,20 @@
 				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAccessConstraintTest" />
 		</classes>
 	</test>
-
-
-
-
+	<test
+		name="DGIWG - Web Map Service 1.3 Harmonized Profile, Requirement 10">
+		<classes>
+			<class
+				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest" />
+		</classes>
+	</test>
+	<test
+		name="DGIWG - Web Map Service 1.3 Harmonized Profile, Requirement 11">
+		<classes>
+			<class
+				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest" />
+		</classes>
+	</test>
 	<test
 		name="DGIWG - Web Map Service 1.3 Harmonized Profile, Requirement 12">
 		<classes>
@@ -168,26 +182,6 @@
 
 	<test name="DGIWG WMS">
 		<classes>
-			<!-- DGIWG Requirement 7 : A WMS server shall provide an "Abstract" at 
-				the service level, in the GetCapabilities response document. -->
-			<class
-				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesContentTest" />
-
-
-			<!-- DGIWG Requirement 10 : If a WMS server is providing services to a 
-				coalition mission federated network, in support of operations or an exercise, 
-				it shall include the following information in the <abstract> element of the 
-				service metadata: "This service implements the WMS 1.3 STANAG 6523 Ed.2 profile". 
-				The provision of these metadata elements are optional for a WMS server which 
-				is providing services across one single non-mission network. -->
-			<class
-				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesAbstractTest" />
-
-			<!-- DGIWG Requirement 11 : A DGIWG basic WMS server shall provide a minimum 
-				keyword list based on the DGIM (DGIWG Geospatial Information Model) groups. -->
-			<class
-				name="de.latlon.ets.wms13.core.dgiwg.testsuite.getcapabilities.GetCapabilitiesKeywordTest" />
-
 
 			<!-- ================================================================================================================ -->
 			<!-- USELESS TESTS : COMMENTED. -->
