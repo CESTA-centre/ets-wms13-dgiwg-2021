@@ -3,6 +3,7 @@ package de.latlon.ets.wms13.core.util.request;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.BBOX_PARAM;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.CRS_PARAM;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.FORMAT_PARAM;
+import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_CAPABILITIES;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_FEATURE_INFO;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_MAP;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.HEIGHT_PARAM;
@@ -49,6 +50,40 @@ public final class WmsRequestBuilder {
 
     private WmsRequestBuilder() {
     }
+    
+    /**
+     * Creates a GetCapabilities request with random parameters from the WMS Capabilities.
+     * 
+     * @param wmsCapabilities
+     *            the capabilities of the WMS, never <code>null</code>
+     * @param layerInfos
+     *            the parsed layerInfos, never <code>null</code>
+     * @return a GetCapabilities request with random parameters, never <code>null</code>
+     */
+    public static WmsKvpRequest buildGetCapabilitiesRequest( Document wmsCapabilities, List<LayerInfo> layerInfos ) {
+        String format = getSupportedFormat( wmsCapabilities, GET_CAPABILITIES );
+        return buildGetCapabilitiesRequest( wmsCapabilities, layerInfos, format );
+    }
+    
+    /**
+     * Creates a GetCapabilities request with random parameters from the WMS Capabilities.
+     * 
+     * @param wmsCapabilities
+     *            the capabilities of the WMS, never <code>null</code>
+     * @param layerInfos
+     *            the parsed layerInfos, never <code>null</code>
+     * @param format
+     *            the format to use, never <code>null</code>, if the format is not supported by the WMS, the assertion
+     *            fails
+     * @return a GetCapabilities request with random parameters, never <code>null</code>
+     */
+    public static WmsKvpRequest buildGetCapabilitiesRequest( Document wmsCapabilities, List<LayerInfo> layerInfos,
+                                                            String format ) {
+        boolean isFormatSupported = ServiceMetadataUtils.parseSupportedFormats( wmsCapabilities, GET_CAPABILITIES ).contains( format );
+        assertTrue( isFormatSupported, "The requested format is not supported for GetCapabilities requests." );
+        return buildGetCapabilitiesRequestWithFormat( layerInfos, format );
+    }
+    
 
     /**
      * Creates a GetFatureInfo request with random parameters from the WMS Capabilities.
@@ -142,6 +177,20 @@ public final class WmsRequestBuilder {
         reqEntity.addKvp( I_PARAM, "0" );
         reqEntity.addKvp( J_PARAM, "0" );
         reqEntity.addKvp( INFO_FORMAT_PARAM, format );
+        return reqEntity;
+    }
+    
+    private static WmsKvpRequest buildGetCapabilitiesRequestWithFormat( List<LayerInfo> layerInfos, String format ) {
+        WmsKvpRequest reqEntity = new WmsKvpRequest();
+        reqEntity.addKvp( SERVICE_PARAM, SERVICE_TYPE_CODE );
+        reqEntity.addKvp( VERSION_PARAM, VERSION );
+        reqEntity.addKvp( REQUEST_PARAM, GET_CAPABILITIES );
+
+        LayerInfo layerInfo = findSuitableLayerInfo( layerInfos );
+        assertNotNull( layerInfo, "Could not find suitable layer for GetMap requests." );
+
+        assertNotNull( format, "Could not find request format for GetCapabilities." );
+
         return reqEntity;
     }
 

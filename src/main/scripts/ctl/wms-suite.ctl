@@ -84,13 +84,11 @@
           <ctl:with-param name="wms.capabilities.url" select="normalize-space($form-data/values/value[@key='wms-uri'])" />
         </ctl:call-function>
       </xsl:variable>
-      <!--
       <xsl:variable name="getCapabilitiesExceptionInEnglishLanguage">
         <ctl:call-function name="interactive:capabilitiesExceptionInEnglishLanguage">
           <ctl:with-param name="wms.capabilities.url" select="normalize-space($form-data/values/value[@key='wms-uri'])" />
         </ctl:call-function>
       </xsl:variable>
-      -->
       <xsl:variable name="test-run-props">
         <properties version="1.0">
           <entry key="wms">
@@ -118,11 +116,9 @@
           <entry key="getmap_exception_in_english">
             <xsl:value-of select="$getMapExceptionInEnglishLanguage" />
           </entry>
-          <!--
           <entry key="getcapabilities_exception_in_english">
             <xsl:value-of select="$getCapabilitiesExceptionInEnglishLanguage" />
           </entry>
-          -->
         </properties>
       </xsl:variable>
       <xsl:variable name="testRunDir">

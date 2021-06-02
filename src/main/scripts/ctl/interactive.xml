@@ -156,7 +156,6 @@
       </xsl:choose>
     </ctl:code>
   </ctl:function>
-  <!--
   <ctl:function name="interactive:capabilitiesExceptionInEnglishLanguage">
     <ctl:param name="wms.capabilities.url">A string containing the wms capabilities url.</ctl:param>
     <ctl:return>The test result (true | false).</ctl:return>
@@ -194,6 +193,5 @@
       </xsl:choose>
     </ctl:code>
   </ctl:function>
-  -->
 
 </ctl:package>

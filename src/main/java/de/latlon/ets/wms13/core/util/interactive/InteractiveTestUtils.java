@@ -1,6 +1,7 @@
 package de.latlon.ets.wms13.core.util.interactive;
 
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_FEATURE_INFO;
+import static de.latlon.ets.wms13.core.domain.DGIWGWMS.BBOX_PARAM;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_CAPABILITIES;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.GET_MAP;
 import static de.latlon.ets.wms13.core.domain.DGIWGWMS.LAYERS_PARAM;
@@ -8,25 +9,18 @@ import static de.latlon.ets.wms13.core.domain.DGIWGWMS.QUERY_LAYERS_PARAM;
 import static de.latlon.ets.wms13.core.domain.ProtocolBinding.GET;
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.getOperationEndpoint;
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseLayerInfo;
-import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseCapabilityTitles;
+//import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseCapabilityTitles;
 import static de.latlon.ets.wms13.core.util.request.WmsRequestBuilder.buildGetFeatureInfoRequest;
 import static de.latlon.ets.wms13.core.util.request.WmsRequestBuilder.buildGetMapRequest;
+import static de.latlon.ets.wms13.core.util.request.WmsRequestBuilder.buildGetCapabilitiesRequest;
 
 import java.net.URI;
 import java.util.List;
-import java.util.logging.Level;
 
 import javax.ws.rs.core.UriBuilder;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
-import de.latlon.ets.core.util.TestSuiteLogger;
 import de.latlon.ets.core.util.URIUtils;
 import de.latlon.ets.wms13.core.client.WmsKvpRequest;
 import de.latlon.ets.wms13.core.domain.DGIWGWMS;
@@ -105,13 +99,13 @@ public final class InteractiveTestUtils {
      */
     public static String retrieveInvalidGetCapabilitiesRequest( String wmsCapabilitiesUrl ) {
     	Document wmsCapabilities = readCapabilities( wmsCapabilitiesUrl );
-        URI getFeatureInfoEndpoint = getOperationEndpoint( wmsCapabilities, GET_FEATURE_INFO, GET );
+        URI getCapabilitiesEndpoint = getOperationEndpoint( wmsCapabilities, GET_CAPABILITIES, GET );
         List<LayerInfo> layerInfos = parseLayerInfo( wmsCapabilities );
 
-        WmsKvpRequest getFeatureInfoRequest = buildGetFeatureInfoRequest( wmsCapabilities, layerInfos );
-        getFeatureInfoRequest.addKvp( LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
-        getFeatureInfoRequest.addKvp( QUERY_LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
-        return createUri( getFeatureInfoEndpoint, getFeatureInfoRequest );
+        WmsKvpRequest getCapabilitiesRequest = buildGetCapabilitiesRequest( wmsCapabilities, layerInfos );
+        String dummy_bbox = "dummy";
+        getCapabilitiesRequest.addKvp(BBOX_PARAM, dummy_bbox);
+        return createUri( getCapabilitiesEndpoint, getCapabilitiesRequest );
     }
     
     
