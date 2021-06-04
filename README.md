@@ -5,6 +5,23 @@ DGIWG WMS STANAG 6523 Ed.1 revision application profile, based on [DGIWG-112](ht
 A conforming implementation must also satisfy the constraints of the **Queryable WMS** conformance 
 class as defined in the base [WMS 1.3 standard](http://www.opengeospatial.org/standards/wms).
 
+## How to build the project
+
+Before building it you need to build ets-dgiwg-core. Do the follwoing:
+
+`git clone https://github.com/opengeospatial/ets-dgiwg-core.git`
+
+`cd ets-dgiwg-core`
+
+`mvn clean install`
+
+Now you can build the project:
+
+`git clone https://github.com/CESTA-centre/ets-wms13-dgiwg-2021.git`
+
+`cd ets-wms13-dgiwg-2021`
+
+`mvn clean install`
 
 ## How to run the tests
 
