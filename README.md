@@ -13,7 +13,11 @@ Before building it you need to build ets-dgiwg-core. Do the follwoing:
 
 `cd ets-dgiwg-core`
 
+`git checkout 0.4`
+
 `mvn clean install`
+
+If the project does not compile, it is probably because of obsolete dependency version (example, change teamengine-spi version to 5.4.1). Checkout these with [Central Maven Repository](https://search.maven.org/). 
 
 Now you can build the project:
 
