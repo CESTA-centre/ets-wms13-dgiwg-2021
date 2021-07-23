@@ -25,6 +25,7 @@ public class GetFeatureInfoInEnglishLanguageTest {
     		+ "				languages, but English must always be included."}, description = "Ask user if GetFeatureInfo response is in English.")
     public void featureInfoResponseInEnglishLanguage( ITestContext context )
                     throws XPathExpressionException, XPathFactoryConfigurationException {
+    	
         if ( context == null )
             throw new SkipException( "Context is null!" );
         Object attribute = context.getSuite().getAttribute( SuiteAttribute.INTERACTIVE_TEST_RESULT.getName() );

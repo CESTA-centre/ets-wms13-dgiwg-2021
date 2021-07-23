@@ -25,10 +25,13 @@ import static java.util.Arrays.asList;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.Map.Entry;
 
 import org.w3c.dom.Document;
 
@@ -45,6 +48,7 @@ import de.latlon.ets.wms13.core.util.ServiceMetadataUtils;
 public final class WmsRequestBuilder {
 
     private static final Random RANDOM = new Random();
+    private static final String NOT_FOUND = " | ! No suitable request found ";
 
     private static final List<String> TRANSPARENT_IMG_FORMATS = asList( IMAGE_PNG, IMAGE_GIF );
 
@@ -134,10 +138,23 @@ public final class WmsRequestBuilder {
         reqEntity.addKvp( REQUEST_PARAM, GET_MAP );
 
         LayerInfo layerInfo = findSuitableLayerInfo( layerInfos );
-        assertNotNull( layerInfo, "Could not find suitable layer for GetMap request." );
+        //assertNotNull( layerInfo, "Could not find suitable layer for GetMap request." );
+        if(layerInfo==null) {
+			String pb = "Could not find suitable layer for GetMap request.";
+			WmsKvpRequest reqNotFound = new WmsKvpRequest();
+			reqNotFound.addKvp(NOT_FOUND, pb);
+			return reqNotFound;
+		}
 
         String format = getSupportedFormat( wmsCapabilities, GET_MAP );
-        assertNotNull( format, "Could not find request format for GetMap request." );
+        //assertNotNull( format, "Could not find request format for GetMap request." );
+        if(format==null) {
+			String pb = "Could not find request format for GetMap request.";
+			WmsKvpRequest reqNotFound = new WmsKvpRequest();
+			reqNotFound.addKvp(NOT_FOUND, pb);
+			return reqNotFound;
+		}
+        
 
         reqEntity.addKvp( LAYERS_PARAM, layerInfo.getLayerName() );
         reqEntity.addKvp( STYLES_PARAM, "" );
@@ -160,9 +177,21 @@ public final class WmsRequestBuilder {
         reqEntity.addKvp( REQUEST_PARAM, GET_FEATURE_INFO );
 
         LayerInfo layerInfo = findSuitableLayerInfo( layerInfos );
-        assertNotNull( layerInfo, "Could not find suitable layer for GetMap requests." );
+        //assertNotNull( layerInfo, "Could not find suitable layer for GetMap requests." );
+        if(layerInfo==null) {
+			String pb = "Could not find suitable layer for GetMap requests." + layerInfo;
+			WmsKvpRequest reqNotFound = new WmsKvpRequest();
+			reqNotFound.addKvp(NOT_FOUND, pb);
+			return reqNotFound;
+		}
 
-        assertNotNull( format, "Could not find request format for GetFeatureInfo." );
+        //assertNotNull( format, "Could not find request format for GetFeatureInfo." );
+        if(format==null) {
+			String pb = "Could not find request format for GetFeatureInfo.";
+			WmsKvpRequest reqNotFound = new WmsKvpRequest();
+			reqNotFound.addKvp(NOT_FOUND, pb);
+			return reqNotFound;
+		}
 
         String layerName = layerInfo.getLayerName();
         BoundingBox bbox = findBoundingBox( layerInfo );
@@ -187,9 +216,21 @@ public final class WmsRequestBuilder {
         reqEntity.addKvp( REQUEST_PARAM, GET_CAPABILITIES );
 
         LayerInfo layerInfo = findSuitableLayerInfo( layerInfos );
-        assertNotNull( layerInfo, "Could not find suitable layer for GetMap requests." );
+        //assertNotNull( layerInfo, "Could not find suitable layer for GetMap requests." );
+        if(layerInfo==null) {
+			String pb = "Could not find suitable layer for GetMap requests.";
+			WmsKvpRequest reqNotFound = new WmsKvpRequest();
+			reqNotFound.addKvp(NOT_FOUND, pb);
+			return reqNotFound;
+		}
 
-        assertNotNull( format, "Could not find request format for GetCapabilities." );
+        //assertNotNull( format, "Could not find request format for GetCapabilities." );
+        if(format==null) {
+			String pb = "Could not find request format for GetCapabilities.";
+			WmsKvpRequest reqNotFound = new WmsKvpRequest();
+			reqNotFound.addKvp(NOT_FOUND, pb);
+			return reqNotFound;
+		}
 
         return reqEntity;
     }
@@ -255,5 +296,6 @@ public final class WmsRequestBuilder {
     private static boolean layerHasBboxes( LayerInfo layerInfo ) {
         return layerInfo.getBboxes().size() > 0;
     }
-
+ 
+    
 }

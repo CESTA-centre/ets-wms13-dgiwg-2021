@@ -1,6 +1,7 @@
 package de.latlon.ets.wms13.core.client;
 
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
@@ -55,6 +56,36 @@ public class WmsKvpRequest {
     private String encode( String value ) {
         try {
             return URLEncoder.encode( value, "UTF-8" );
+        } catch ( UnsupportedEncodingException e ) {
+            // UTF-8 should be available
+        }
+        return value;
+    }
+
+    
+    /**
+     * Gets the current value of a the KVP, if existing.
+     * 
+     * @param keyd
+     *            of the KVP to remove, may be <code>null</code> (nothing happens)
+     * 
+     * @return the value of the KVP at key
+     */
+    public String getKvpValue( String keyd ) {
+        String value = null;
+        for ( Entry<String, String> kvp : kvps.entrySet() ) {
+            if ( kvp.getKey().equals( keyd ) ) {
+                value = kvp.getValue();
+                value = decode( value );
+                break;
+            }
+        }
+        return value;
+    }
+    
+    private String decode( String value ) {
+        try {
+            return URLDecoder.decode( value, "UTF-8" );
         } catch ( UnsupportedEncodingException e ) {
             // UTF-8 should be available
         }

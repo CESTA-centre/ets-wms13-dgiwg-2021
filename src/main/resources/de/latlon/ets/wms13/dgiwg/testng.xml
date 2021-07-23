@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="${ets-code}-${project.version}" verbose="0"
 	configfailurepolicy="continue">
-	<parameter name="wms" value="" />
+	<parameter name="wms" value="https://wxs.ign.fr/metadata/geoportail/v/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities&amp;version=1.3.0" />
 	<parameter name="tes" value="" />
 
 	<listeners>

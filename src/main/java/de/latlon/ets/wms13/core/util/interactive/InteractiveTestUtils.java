@@ -9,15 +9,16 @@ import static de.latlon.ets.wms13.core.domain.DGIWGWMS.QUERY_LAYERS_PARAM;
 import static de.latlon.ets.wms13.core.domain.ProtocolBinding.GET;
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.getOperationEndpoint;
 import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseLayerInfo;
-//import static de.latlon.ets.wms13.core.util.ServiceMetadataUtils.parseCapabilityTitles;
 import static de.latlon.ets.wms13.core.util.request.WmsRequestBuilder.buildGetFeatureInfoRequest;
 import static de.latlon.ets.wms13.core.util.request.WmsRequestBuilder.buildGetMapRequest;
+import static org.testng.Assert.assertNotNull;
 import static de.latlon.ets.wms13.core.util.request.WmsRequestBuilder.buildGetCapabilitiesRequest;
 
 import java.net.URI;
 import java.util.List;
 
 import javax.ws.rs.core.UriBuilder;
+import javax.xml.xpath.XPathExpressionException;
 
 import org.w3c.dom.Document;
 
@@ -35,6 +36,7 @@ import de.latlon.ets.wms13.core.util.request.WmsRequestBuilder;
 public final class InteractiveTestUtils {
 
     private static final String UNKNOWN_LAYER_FOR_TESTING = "UNKNOWN_LAYER_FOR_TESTING";
+    private static final String NOT_FOUND = " | ! No suitable request found ";
 
     private InteractiveTestUtils() {
     }
@@ -52,7 +54,17 @@ public final class InteractiveTestUtils {
         List<LayerInfo> layerInfos = parseLayerInfo( wmsCapabilities );
 
         WmsKvpRequest getFeatureInfoRequest = WmsRequestBuilder.buildGetFeatureInfoRequest( wmsCapabilities, layerInfos );
-        return createUri( getFeatureInfoEndpoint, getFeatureInfoRequest );
+        
+        if(getFeatureInfoRequest!=null){
+			if(getFeatureInfoRequest.getKvpValue(NOT_FOUND)!=null){
+				return (getFeatureInfoRequest.getKvpValue(NOT_FOUND)+ NOT_FOUND);
+			}else {
+				return createUri(getFeatureInfoEndpoint, getFeatureInfoRequest);
+			}
+		}else {
+			return ("GetFeatureInfo operation is not supported by the server !");
+		}
+        
     }
 
     /**
@@ -68,9 +80,18 @@ public final class InteractiveTestUtils {
         List<LayerInfo> layerInfos = parseLayerInfo( wmsCapabilities );
 
         WmsKvpRequest getFeatureInfoRequest = buildGetFeatureInfoRequest( wmsCapabilities, layerInfos );
-        getFeatureInfoRequest.addKvp( LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
-        getFeatureInfoRequest.addKvp( QUERY_LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
-        return createUri( getFeatureInfoEndpoint, getFeatureInfoRequest );
+               
+        if(getFeatureInfoRequest!=null){
+			if(getFeatureInfoRequest.getKvpValue(NOT_FOUND)!=null){
+				return (getFeatureInfoRequest.getKvpValue(NOT_FOUND)+ NOT_FOUND);
+			}else {
+				getFeatureInfoRequest.addKvp( LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
+		        getFeatureInfoRequest.addKvp( QUERY_LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
+		        return createUri( getFeatureInfoEndpoint, getFeatureInfoRequest );
+			}
+		}else {
+			return ("GetFeatureInfo operation is not supported by the server !");
+		}
     }
 
     /**
@@ -82,12 +103,22 @@ public final class InteractiveTestUtils {
      */
     public static String retrieveInvalidGetMapRequest( String wmsCapabilitiesUrl ) {
         Document wmsCapabilities = readCapabilities( wmsCapabilitiesUrl );
-        URI getFeatureInfoEndpoint = getOperationEndpoint( wmsCapabilities, GET_MAP, GET );
+        URI getMapEndpoint = getOperationEndpoint( wmsCapabilities, GET_MAP, GET );
         List<LayerInfo> layerInfos = parseLayerInfo( wmsCapabilities );
 
-        WmsKvpRequest getFeatureInfoRequest = buildGetMapRequest( wmsCapabilities, layerInfos );
-        getFeatureInfoRequest.addKvp( LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
-        return createUri( getFeatureInfoEndpoint, getFeatureInfoRequest );
+        WmsKvpRequest getMapRequest = buildGetMapRequest( wmsCapabilities, layerInfos );
+        
+        if(getMapRequest!=null){
+			if(getMapRequest.getKvpValue(NOT_FOUND)!=null){
+				return (getMapRequest.getKvpValue(NOT_FOUND)+ NOT_FOUND);
+			}else {
+				getMapRequest.addKvp( LAYERS_PARAM, UNKNOWN_LAYER_FOR_TESTING );
+		        return createUri( getMapEndpoint, getMapRequest );
+			}
+		}else {
+			return ("GetMap operation is not supported by the server !");
+		}
+
     }
     
     /**
